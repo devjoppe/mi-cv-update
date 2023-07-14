@@ -1,0 +1,21 @@
+[
+  {
+    "menu": [
+      {
+        "id": 1,
+        "title": ".projects",
+        "url": "/"
+      },
+      {
+        "id": 2,
+        "title": ".about",
+        "url": "/about"
+      },
+      {
+        "id": 3,
+        "title": ".contact",
+        "url": "/contact"
+      }
+    ]
+  }
+]
