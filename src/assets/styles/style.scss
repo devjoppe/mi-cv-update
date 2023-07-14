@@ -1,5 +1,8 @@
-/* Website configs */
+// Website configs
 @use "config";
 
-/* Components */
+// Website layout
+@use "../../layout/layout";
+
+// Components
 @use "../../components/header/header";
