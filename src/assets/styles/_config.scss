@@ -24,6 +24,9 @@ body {
 //Text-headings
 h1 {
     font-family: 'Inter', sans-serif;
+    font-size: 62px;
+    font-weight: normal;
+    line-height: 58px;
 }
 
 h2, h3, h4 {
@@ -32,16 +35,26 @@ h2, h3, h4 {
 
 span {
     &.subtitle {
+        display: block;
+        border-left: 6px solid $highlight-color;
+        padding-left: 16px;
+        margin-bottom: 32px;
         font-family: 'Kreon', serif;
+        font-size: 24px;
+        color: $font-secondary-color;
     }
     &.comment {
         font-family: 'Poppins', sans-serif;
+    }
+    &.quote-by {
+        font-size: 16px;
     }
 }
 
 // Buttons
 button {
     color: $font-main-color;
+    background: $background-shade-a;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     font-weight: bold;
