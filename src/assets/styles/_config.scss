@@ -8,13 +8,19 @@ $background-shade-special: #0A0A0A;
 // Color-Fonts
 $font-main-color: #0A0A0A;
 $font-secondary-color: #626262;
+$font-inverted: #F4F4F4;
 // Color-Highlight
 $highlight-color: #7CAAD4;
+$highlight-selected: #0A0A0A;
 
-// Text-styling
+// body
 body {
     font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: $font-main-color;
 }
+
 //Text-headings
 h1 {
     font-family: 'Inter', sans-serif;
@@ -30,6 +36,22 @@ span {
     }
     &.comment {
         font-family: 'Poppins', sans-serif;
+    }
+}
+
+// Buttons
+button {
+    color: $font-main-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    &.selected {
+        background: $highlight-selected;
+        color: $font-inverted;
     }
 }
 
