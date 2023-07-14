@@ -32,3 +32,13 @@ span {
         font-family: 'Poppins', sans-serif;
     }
 }
+
+// Sections
+section {
+    &.section-a {
+        background: $background-shade-a
+    }
+    &.section-b {
+        background: $background-shade-b;
+    }
+}
