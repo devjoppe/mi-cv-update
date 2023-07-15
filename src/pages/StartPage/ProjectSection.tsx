@@ -1,8 +1,12 @@
 import React from "react";
 
+// Components
+import ProjectCard from "../../components/ProjectCard/ProjectCard.tsx";
+
 export interface projectsInt {
     id: number,
     title: string,
+    kicker: string,
     extra: object[],
     user: string
 }
@@ -17,8 +21,20 @@ const ProjectSection:React.FC<IProp> = ({projects}) => {
         <section className="light-shade">
             <div className="section-content-wrapper">
                 {projects &&
-                    <h2>{projects.title}</h2>
+                    <div>
+                        <div>
+                            <h2>{projects.title}</h2>
+                        </div>
+                        <div>
+                            <span className="kicker">
+                                {projects.kicker}
+                            </span>
+                        </div>
+                    </div>
                 }
+                <div>
+                    <ProjectCard />
+                </div>
             </div>
         </section>
     )

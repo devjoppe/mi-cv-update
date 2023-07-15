@@ -16,7 +16,7 @@ const StartPage = () => {
                                 {data.kicker}
                             </span>
                             <span className="quote-by">
-                                {data.user}
+                                - {data.user}
                             </span>
                         </div>
                     ))}

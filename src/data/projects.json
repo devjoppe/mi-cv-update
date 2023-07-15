@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "type": "small",
+    "image": "/assets/images/pr-tictactoe.png",
+    "title": "Tic Tac Toe",
+    "description": "The primary goal of the project was to learn and improve my skills by focusing on the game logic and following the specifications outlined in the design provided by frontendmentor.io. By working on this challenge, I was able to enhance my understanding of React, TypeScript, and front-end development concepts.",
+    "github": "https://github.com/devjoppe/tic-tac-toe",
+    "solution": "https://www.jotto.dev/project/tic-tac-toe/",
+    "extra": ""
+  },
+  {
+    "id": 2,
+    "type": "small",
+    "image": "/assets/images/pr-starwarsinfo.png",
+    "title": "Star Wars Info App",
+    "description": "This assignment was part of our advanced React course, where the challenge was to develop an application that offers comprehensive information about the Star Wars universe. The app fetches data from an API and presents it in a visually appealing manner. An essential requirement was to incorporate query parameters and implement search functionality for each category, as well as pagination.",
+    "github": "https://github.com/devjoppe/mi-starwars-info-app",
+    "solution": "https://swapi-mi-app.netlify.app/",
+    "extra": ""
+  }
+]
