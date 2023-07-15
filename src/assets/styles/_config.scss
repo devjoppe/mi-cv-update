@@ -39,6 +39,10 @@ h2 {
     margin-bottom: 24px;
 }
 
+h3 {
+    font-size: 21px;
+}
+
 span {
     &.subtitle {
         display: block;
@@ -61,6 +65,14 @@ span {
     &.quote-by {
         font-size: 16px;
     }
+}
+
+// Colors components
+.light-shade {
+    background: $background-shade-b;
+}
+.dark-shade {
+    background: $background-shade-a;
 }
 
 // Buttons

@@ -14,12 +14,6 @@ section {
     width: 100%;
     padding: 96px 32px;
     box-sizing: border-box;
-    &.light-shade {
-        background: config.$background-shade-b;
-    }
-    &.dark-shade {
-        background: config.$background-shade-a;
-    }
     &.top-section {
         height: calc(100vh - 63px);
         align-items: center;

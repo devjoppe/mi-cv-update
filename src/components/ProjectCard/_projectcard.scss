@@ -1,6 +1,36 @@
+@use '../../assets/styles/config';
+
 .project-card-wrapper {
     img {
+        display: block;
+        border-bottom: 6px solid config.$highlight-color;
         width: 100%;
         height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 24px;
+}
+
+.card-content {
+    padding: 24px;
+    h3 {
+        margin-top: 0;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+.card-buttons {
+    button {
+        background: config.$background-shade-special;
+        color: config.$font-inverted;
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
