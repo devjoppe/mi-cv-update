@@ -1,9 +1,12 @@
 import React from "react";
 
+// JSON data
+import projects from '../../data/projects.json'
+
 // Components
 import ProjectCard from "../../components/ProjectCard/ProjectCard.tsx";
 
-export interface projectsInt {
+export interface sectionInfoInt {
     id: number,
     title: string,
     kicker: string,
@@ -12,28 +15,30 @@ export interface projectsInt {
 }
 
 interface IProp {
-    projects: projectsInt
+    sectionInfo: sectionInfoInt
 }
 
-const ProjectSection:React.FC<IProp> = ({projects}) => {
+const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
 
     return (
         <section className="light-shade">
             <div className="section-content-wrapper">
-                {projects &&
+                {sectionInfo &&
                     <div>
                         <div>
-                            <h2>{projects.title}</h2>
+                            <h2>{sectionInfo.title}</h2>
                         </div>
                         <div>
                             <span className="kicker">
-                                {projects.kicker}
+                                {sectionInfo.kicker}
                             </span>
                         </div>
                     </div>
                 }
                 <div>
-                    <ProjectCard />
+                    {projects && projects.map(project => (
+                        <ProjectCard project={project}/>
+                    ))}
                 </div>
             </div>
         </section>

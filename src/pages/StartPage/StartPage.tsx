@@ -22,7 +22,7 @@ const StartPage = () => {
                     ))}
                 </div>
             </section>
-            <ProjectSection projects={jsonData[1]} />
+            <ProjectSection sectionInfo={jsonData[1]} />
         </>
     )
 }
