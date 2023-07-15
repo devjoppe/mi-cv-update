@@ -1,16 +1,29 @@
+// Page data
+import jsonData from '../../data/startpage.json'
+
+// Sections
+import ProjectSection from "./ProjectSection.tsx";
+
 const StartPage = () => {
     return(
-        <section className="light-shade top-section">
-            <div className="section-content-wrapper">
-                <h1>Frontend Developer</h1>
-                <span className="subtitle">
-                    My goal is to  use my strong analytical skills and careful attention to detail to create services that represent the highest level of quality.
-                </span>
-                <span className="quote-by">
-                    - Joakim Ottosson
-                </span>
-            </div>
-        </section>
+        <>
+            <section className="dark-shade top-section">
+                <div className="section-content-wrapper">
+                    {jsonData && jsonData.filter(item => item.id === 1).map(data  => (
+                        <div key={data.id}>
+                            <h1>{data.title}</h1>
+                            <span className="subtitle">
+                                {data.kicker}
+                            </span>
+                            <span className="quote-by">
+                                {data.user}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <ProjectSection projects={jsonData[1]} />
+        </>
     )
 }
 

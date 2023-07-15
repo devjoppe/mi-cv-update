@@ -1,7 +1,92 @@
 [
   {
+    "id": 1,
     "title": "Frontend Developer",
-    "kicker": "I like to use my strong analytical skills and careful attention to detail to create services that represent the highest level of quality.",
+    "kicker": "My goal is to use my strong analytical skills and careful attention to detail to create services that represent the highest level of quality.",
+    "extra": [],
     "user": "Joakim Ottosson"
+  },
+  {
+    "id": 2,
+    "title": "Selected projects",
+    "kicker": "These projects aim to showcase my skills as a frontend developer.",
+    "extra": [
+      {
+        "data": "I feel comfortable following requirements specifications, but I am also able to develop my own design concepts when needed."
+      }
+    ],
+    "user": ""
+  },
+  {
+    "id": 3,
+    "title": "Freelance projects",
+    "kicker": "Do you need someone to help you get started with your web project? Contact me, and I'm confident we can find a solution.",
+    "extra": [],
+    "user": ""
+  },
+  {
+    "id": 4,
+    "title": "What I use?",
+    "kicker": "In development, I prefer the following technologies. However, my aspiration is to continuously learn new techniques and expand my knowledge to keep evolving as a developer.",
+    "extra": [
+      {
+        "data":[
+          {
+            "id": 5,
+            "title": "Preferred Web Stack",
+            "data": [
+              {
+                "tech": "React",
+                "description": "UI library",
+                "url": "https://www.react.dev"
+              },
+              {
+                "tech": "Vite",
+                "description": "Frontend tooling",
+                "url": "https://www.vitejs.dev"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "Experience with",
+            "data": [
+              {
+                "tech": "Astro",
+                "description": "Headless CMS",
+                "url": "https://www.astro.dev"
+              },
+              {
+                "tech": "Wordpress",
+                "description": "CMS",
+                "url": "https://www.wordpress.dev"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "",
+            "data": ["I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript."]
+          },
+          {
+            "id": 8,
+            "title": "Tools",
+            "data": [
+              {
+                "tech": "Github",
+                "description": "Source control",
+                "url": "https://www.github.com"
+              },
+              {
+                "tech": "Webstorm",
+                "description": "IDE",
+                "url": "https://www.webstorm.dev"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "user": ""
   }
 ]

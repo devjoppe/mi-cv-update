@@ -15,10 +15,10 @@ section {
     padding: 96px 32px;
     box-sizing: border-box;
     &.light-shade {
-        background: config.$background-shade-a;
+        background: config.$background-shade-b;
     }
     &.dark-shade {
-        background: config.$background-shade-b;
+        background: config.$background-shade-a;
     }
     &.top-section {
         height: calc(100vh - 63px);
