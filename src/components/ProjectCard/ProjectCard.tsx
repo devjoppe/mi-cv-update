@@ -18,6 +18,11 @@ interface IProp {
 }
 
 const ProjectCard:React.FC<IProp> = ({project, shade}) => {
+
+    const goToPage = (url:string) => {
+        window.open(url)
+    }
+
     const CardType = () => {
         if (project.type  === "card-small" || project.type ===  "card-large") {
             return (
@@ -27,8 +32,8 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
                     <div className="card-buttons">
-                        <button>Project on Github.</button>
-                        <button>View solution.</button>
+                        <button onClick={() => goToPage(project.github)}>Project on Github.</button>
+                        <button onClick={() => goToPage(project.solution)}>View solution.</button>
                     </div>
                 </div>
                 </>

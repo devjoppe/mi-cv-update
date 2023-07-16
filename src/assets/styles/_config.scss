@@ -87,6 +87,9 @@ button {
     border: none;
     padding: 8px 16px;
     border-radius: 5px;
+    &.standard {
+        padding: 8px 8px;
+    }
     &.selected {
         background: $highlight-selected;
         color: $font-inverted;

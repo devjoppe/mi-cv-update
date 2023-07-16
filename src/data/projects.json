@@ -14,7 +14,7 @@
     "id": 2,
     "type": "card-small",
     "image": "/assets/images/pr-starwarsinfo.png",
-    "title": "Star Wars Info App",
+    "title": "Star Wars Info",
     "description": "This assignment was part of our advanced React course, where the challenge was to develop an application that offers comprehensive information about the Star Wars universe. The app fetches data from an API and presents it in a visually appealing manner. An essential requirement was to incorporate query parameters and implement search functionality for each category, as well as pagination.",
     "github": "https://github.com/devjoppe/mi-starwars-info-app",
     "solution": "https://swapi-mi-app.netlify.app/",
@@ -37,9 +37,9 @@
     "type": "card-large",
     "image": "/assets/images/pr-starwarsinfo.png",
     "title": "Peeps, The Card Game",
-    "description": "This assignment was part of our advanced React course, where the challenge was to develop an application that offers comprehensive information about the Star Wars universe. The app fetches data from an API and presents it in a visually appealing manner. An essential requirement was to incorporate query parameters and implement search functionality for each category, as well as pagination.",
-    "github": "https://github.com/devjoppe/mi-starwars-info-app",
-    "solution": "https://swapi-mi-app.netlify.app/",
+    "description": "This was a personal learning project to create a memory card game using the cool illustrations from Open Peeps as the card designs. The project aimed to use React for the frontend development and incorporate Firebase as a simple backend for the user and Highscore management.",
+    "github": "https://github.com/devjoppe/card-game",
+    "solution": "https://www.jotto.dev/project/peeps-card-game/",
     "extra": "",
     "bg_color": "dark-shade"
   }

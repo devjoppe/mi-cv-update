@@ -9,8 +9,8 @@ const Header = () => {
             <div className="nav-wrapper">
                 <nav>
                     <button className="selected">.projects</button>
-                    <button>.about</button>
-                    <button>.contact</button>
+                    <button className="standard">.about</button>
+                    <button className="standard">.contact</button>
                 </nav>
             </div>
         </div>
