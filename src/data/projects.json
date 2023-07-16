@@ -1,22 +1,46 @@
 [
   {
     "id": 1,
-    "type": "small",
+    "type": "card-small",
     "image": "/assets/images/pr-tictactoe.png",
     "title": "Tic Tac Toe",
     "description": "The primary goal of the project was to learn and improve my skills by focusing on the game logic and following the specifications outlined in the design provided by frontendmentor.io. By working on this challenge, I was able to enhance my understanding of React, TypeScript, and front-end development concepts.",
     "github": "https://github.com/devjoppe/tic-tac-toe",
     "solution": "https://www.jotto.dev/project/tic-tac-toe/",
-    "extra": ""
+    "extra": "",
+    "bg_color": "dark-shade"
   },
   {
     "id": 2,
-    "type": "small",
+    "type": "card-small",
     "image": "/assets/images/pr-starwarsinfo.png",
     "title": "Star Wars Info App",
     "description": "This assignment was part of our advanced React course, where the challenge was to develop an application that offers comprehensive information about the Star Wars universe. The app fetches data from an API and presents it in a visually appealing manner. An essential requirement was to incorporate query parameters and implement search functionality for each category, as well as pagination.",
     "github": "https://github.com/devjoppe/mi-starwars-info-app",
     "solution": "https://swapi-mi-app.netlify.app/",
-    "extra": ""
+    "extra": "",
+    "bg_color": "dark-shade"
+  },
+  {
+    "id": 3,
+    "type": "quote",
+    "image": "",
+    "title": "Test",
+    "description": "I feel comfortable following requirements specifications, but I am also able to develop my own design concepts when needed.",
+    "github": "",
+    "solution": "",
+    "extra": "",
+    "bg_color": ""
+  },
+  {
+    "id": 4,
+    "type": "card-large",
+    "image": "/assets/images/pr-starwarsinfo.png",
+    "title": "Peeps, The Card Game",
+    "description": "This assignment was part of our advanced React course, where the challenge was to develop an application that offers comprehensive information about the Star Wars universe. The app fetches data from an API and presents it in a visually appealing manner. An essential requirement was to incorporate query parameters and implement search functionality for each category, as well as pagination.",
+    "github": "https://github.com/devjoppe/mi-starwars-info-app",
+    "solution": "https://swapi-mi-app.netlify.app/",
+    "extra": "",
+    "bg_color": "dark-shade"
   }
 ]

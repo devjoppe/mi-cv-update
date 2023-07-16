@@ -9,18 +9,38 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    border-radius: 10px;
-    border: 1px solid #E0E0E0;
+    &.card-large {
+        border-radius: 10px;
+        border: 1px solid #E0E0E0;
+    }
+    &.card-small {
+        border-radius: 10px;
+        border: 1px solid #E0E0E0;
+    }
     margin-bottom: 24px;
 }
 
 .card-content {
-    padding: 24px;
+    &.card-small {
+        padding: 24px;
+    }
+    &.card-large {
+        padding: 24px;
+    }
     h3 {
         margin-top: 0;
     }
     p {
         font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .quote {
+        display: block;
+        color: #626262;
+        font-size: 18px;
+        border-left: 6px solid config.$highlight-color;
+        padding-left: 16px;
+        margin: 48px 0;
     }
 }
 
