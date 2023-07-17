@@ -6,6 +6,7 @@ interface projectInt {
     image: string,
     title: string,
     description: string,
+    tags?: string[],
     github: string,
     solution: string,
     extra?: string,
@@ -30,6 +31,11 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
                 <img src={project.image} alt={project.title}/>
                 <div className={`card-content ${project.type}`}>
                     <h3>{project.title}</h3>
+                    <div className="tags">
+                        { project.tags && project.tags.map(tag => (
+                            <span>{tag}</span>
+                        ))}
+                    </div>
                     <p>{project.description}</p>
                     <div className="card-buttons">
                         <button onClick={() => goToPage(project.github)}>Project on Github.</button>

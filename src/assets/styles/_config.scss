@@ -93,5 +93,6 @@ button {
     &.selected {
         background: $highlight-selected;
         color: $font-inverted;
+        margin: 0 8px;
     }
 }
