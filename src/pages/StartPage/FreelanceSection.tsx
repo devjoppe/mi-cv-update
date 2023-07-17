@@ -8,7 +8,7 @@ const FreelanceSection = () => {
                     </div>
                     <div>
                         <span className="kicker">
-                            Do you need someone to help you get started with your web project? Contact me, and I'm confident we can find a solution.
+                            I can help you get started with your web project? Contact me, and I'm confident we can find a solution.
                         </span>
                         <button>
                             Contact me.

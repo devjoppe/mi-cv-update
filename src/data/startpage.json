@@ -30,17 +30,20 @@
     "kicker": "In development, I prefer the following technologies. However, my aspiration is to continuously learn new techniques and expand my knowledge to keep evolving as a developer.",
     "extra": [
       {
-        "data":[
+        "id": 100,
+        "links":[
           {
             "id": 5,
             "title": "Preferred Web Stack",
             "data": [
               {
+                "id": "L1",
                 "tech": "React",
                 "description": "UI library",
                 "url": "https://www.react.dev"
               },
               {
+                "id": "L2",
                 "tech": "Vite",
                 "description": "Frontend tooling",
                 "url": "https://www.vitejs.dev"
@@ -52,11 +55,13 @@
             "title": "Experience with",
             "data": [
               {
+                "id": "L3",
                 "tech": "Astro",
                 "description": "Headless CMS",
                 "url": "https://www.astro.dev"
               },
               {
+                "id": "L4",
                 "tech": "Wordpress",
                 "description": "CMS",
                 "url": "https://www.wordpress.dev"
@@ -73,11 +78,13 @@
             "title": "Tools",
             "data": [
               {
+                "id": "L5",
                 "tech": "Github",
                 "description": "Source control",
                 "url": "https://www.github.com"
               },
               {
+                "id": "L6",
                 "tech": "Webstorm",
                 "description": "IDE",
                 "url": "https://www.webstorm.dev"

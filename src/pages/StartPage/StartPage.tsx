@@ -4,8 +4,12 @@ import jsonData from '../../data/startpage.json'
 // Sections
 import ProjectSection from "./ProjectSection.tsx";
 import FreelanceSection from "./FreelanceSection.tsx";
+import UseSection from "./UseSection.tsx";
 
 const StartPage = () => {
+
+    console.log(jsonData)
+
     return(
         <>
             <section className="dark-shade top-section">
@@ -25,6 +29,7 @@ const StartPage = () => {
             </section>
             <ProjectSection sectionInfo={jsonData[1]} />
             <FreelanceSection />
+            <UseSection sectionInfo={jsonData[3]} />
         </>
     )
 }

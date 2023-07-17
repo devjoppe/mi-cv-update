@@ -37,7 +37,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 }
                 <div>
                     {projects && projects.map(project => (
-                            <ProjectCard key={project.id} project={project} shade={project.bg_color}/>
+                            <ProjectCard key={project.title} project={project} shade={project.bg_color}/>
                     ))}
                 </div>
             </div>

@@ -33,7 +33,7 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
                     <h3>{project.title}</h3>
                     <div className="tags">
                         { project.tags && project.tags.map(tag => (
-                            <span>{tag}</span>
+                            <span key={tag}>{tag}</span>
                         ))}
                     </div>
                     <p>{project.description}</p>
