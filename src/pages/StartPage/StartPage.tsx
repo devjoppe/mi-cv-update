@@ -3,6 +3,7 @@ import jsonData from '../../data/startpage.json'
 
 // Sections
 import ProjectSection from "./ProjectSection.tsx";
+import FreelanceSection from "./FreelanceSection.tsx";
 
 const StartPage = () => {
     return(
@@ -23,6 +24,7 @@ const StartPage = () => {
                 </div>
             </section>
             <ProjectSection sectionInfo={jsonData[1]} />
+            <FreelanceSection />
         </>
     )
 }

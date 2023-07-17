@@ -75,6 +75,13 @@ span {
 .dark-shade {
     background: $background-shade-a;
 }
+.inverted-shade {
+    background: $background-shade-special;
+    color: $font-inverted;
+    h2, h3, h4 {
+        color: $font-inverted;
+    }
+}
 
 // Buttons
 button {
