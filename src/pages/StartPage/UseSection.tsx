@@ -1,27 +1,14 @@
 import React from "react";
 
+// Components
+import LinkList from "../../components/LinkList/LinkList.tsx";
+
 export interface sectionUseInt {
     id: number,
     title: string,
     kicker: string,
-    extra: ({
-        id: number,
-        links: useLinksInt[]
-    })[],
+    extra: object[],
     user?: string
-}
-
-interface useLinksInt {
-    id: number,
-    title?: string,
-    data: linkItemInt[]
-}
-
-interface linkItemInt {
-    id: string,
-    tech: string,
-    description: string,
-    url: string
 }
 
 interface IProp {
@@ -29,6 +16,9 @@ interface IProp {
 }
 
 const UseSection:React.FC<IProp> = ({sectionInfo}) => {
+
+    console.log("Find my list: ", sectionInfo.extra[0].data[0])
+
     return(
         <section className="dark-shade">
             <div className="section-content-wrapper">
@@ -42,17 +32,8 @@ const UseSection:React.FC<IProp> = ({sectionInfo}) => {
                         </span>
                     </div>
                 </div>
-                <div className="TESTAR">
-                    {sectionInfo && sectionInfo.extra.map(item => (
-                        <div className={`${sectionInfo.id}`} key={sectionInfo.id} >{item.links.map(link => (
-                            <div className={`${link.id}`} key={link.id}>
-                                {link.title}
-                                {link.data.map(item => (
-                                    <span className={`${item.id}`} key={item.id}>{item.tech}</span>
-                                ))}
-                            </div>
-                        ))}</div>
-                    ))}
+                <div>
+                    <LinkList linkData={sectionInfo.extra[0].data[0]}/>
                 </div>
             </div>
         </section>

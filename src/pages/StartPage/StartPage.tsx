@@ -7,9 +7,6 @@ import FreelanceSection from "./FreelanceSection.tsx";
 import UseSection from "./UseSection.tsx";
 
 const StartPage = () => {
-
-    console.log(jsonData)
-
     return(
         <>
             <section className="dark-shade top-section">
