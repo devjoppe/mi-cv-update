@@ -28,7 +28,7 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
         if (project.type  === "card-small" || project.type ===  "card-large") {
             return (
                 <>
-                <img src={project.image} alt={project.title}/>
+                { project.image && <img src={project.image} alt={project.title}/> }
                 <div className={`card-content ${project.type}`}>
                     <h3>{project.title}</h3>
                     <div className="tags">

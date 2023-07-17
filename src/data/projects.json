@@ -4,8 +4,8 @@
     "type": "card-small",
     "image": "/assets/images/pr-tictactoe.png",
     "title": "Tic Tac Toe",
-    "description": "The primary goal of the project was to learn and improve my skills by focusing on the game logic and following the specifications outlined in the design provided by frontendmentor.io. By working on this challenge, I was able to enhance my understanding of React, TypeScript, and front-end development concepts.",
-    "tags": ["React", "Netlify", "TypeScript"],
+    "description": "The primary goal of the project was to learn and improve my skills by focusing on the game logic and following the specifications outlined in the design provided by frontendmentor.io. By working on this challenge, I was able to enhance my understanding of React, TypeScript, and frontend development concepts.",
+    "tags": ["React", "TypeScript", "SCSS", "Netlify"],
     "github": "https://github.com/devjoppe/tic-tac-toe",
     "solution": "https://www.jotto.dev/project/tic-tac-toe/",
     "extra": "",
@@ -44,6 +44,18 @@
     "tags": ["React", "Firebase", "Netlify", "TypeScript"],
     "github": "https://github.com/devjoppe/card-game",
     "solution": "https://www.jotto.dev/project/peeps-card-game/",
+    "extra": "",
+    "bg_color": "dark-shade"
+  },
+  {
+    "id": 5,
+    "type": "card-small",
+    "image": "",
+    "title": "Find a developer",
+    "description": "By using Github's API, I created an app where you can search for users along with their associated information. I followed a specification and built the app using React and CSS.",
+    "tags": ["React", "TypeScript", "Netlify"],
+    "github": "https://github.com/devjoppe/github-user-search-app",
+    "solution": "https://www.jotto.dev/project/github-user-search-app/",
     "extra": "",
     "bg_color": "dark-shade"
   }
