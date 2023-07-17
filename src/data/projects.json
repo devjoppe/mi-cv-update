@@ -58,5 +58,17 @@
     "solution": "https://www.jotto.dev/project/github-user-search-app/",
     "extra": "",
     "bg_color": "dark-shade"
+  },
+  {
+    "id": 5,
+    "type": "card-small",
+    "image": "",
+    "title": "Standard Todo",
+    "description": "As a frontend developer, having a Todo app is standard :) This  is designed by me showcasing  my UI design skills. I developed it using TypeScript and utilized Firebase as the backend for efficient data and user management.",
+    "tags": ["TypeScript", "Firebase", "SCSS", "Netlify"],
+    "github": "https://github.com/devjoppe/github-user-search-app",
+    "solution": "https://www.jotto.dev/project/github-user-search-app/",
+    "extra": "",
+    "bg_color": "dark-shade"
   }
 ]
