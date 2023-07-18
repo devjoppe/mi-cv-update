@@ -34,6 +34,9 @@ const UseSection:React.FC<IProp> = ({sectionInfo}) => {
                 </div>
                 <div>
                     <LinkList linkData={sectionInfo.extra[0].data[0]}/>
+                    <LinkList linkData={sectionInfo.extra[0].data[1]}/>
+                    <LinkList linkData={sectionInfo.extra[0].data[2]}/>
+                    <LinkList linkData={sectionInfo.extra[0].data[3]}/>
                 </div>
             </div>
         </section>
