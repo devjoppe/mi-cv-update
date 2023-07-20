@@ -1,33 +1,16 @@
-import React from "react";
+import React from "react"
 
-export interface linkInt {
-    id: number,
-    title: string,
-    data: linkItemInk[] | string
-}
-
-interface linkItemInk {
-    id: string,
-    tech: string,
-    description: string,
-    url: string
-}
+// Interface
+import {linksInt} from "../../pages/StartPage/UseSection.tsx";
 
 interface IProp {
-    linkData: linkInt
+    linkData: linksInt
 }
 
 const LinkList:React.FC<IProp> = ({linkData}) => {
+
     return(
-       <div className="linklist-wrapper">
-           <h3>{linkData.title}</h3>
-           <ul>
-           {typeof(linkData.data) != "string" ? linkData.data.map(link => (
-               <li><a href={link.url} target="_blank" >{link.tech}</a> - {link.description}</li>
-           )) :
-               <span>{linkData.data}</span> }
-           </ul>
-       </div>
+        <li><a href={linkData.url} target="_blank" >{linkData.link_title}</a> - {linkData.description}</li>
     )
 }
 

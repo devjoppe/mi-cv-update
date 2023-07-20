@@ -1,23 +1,39 @@
 import React from "react";
 
 // Components
-import LinkList from "../../components/LinkList/LinkList.tsx";
+import LinkList from "../../components/LinkList/LinkList.tsx"
 
 export interface sectionUseInt {
     id: number,
     title: string,
     kicker: string,
-    extra: object[],
+    extra?: object[],
     user?: string
+}
+
+interface linkListInt {
+    id: number,
+    category: string,
+    description?: string,
+    flag: string,
+    links?:linksInt[]
+}
+
+export interface linksInt {
+    id: number,
+    link_title?: string,
+    description?: string,
+    url?: string
 }
 
 interface IProp {
     sectionInfo: sectionUseInt
+    linkList: linkListInt[]
 }
 
-const UseSection:React.FC<IProp> = ({sectionInfo}) => {
+const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
 
-    console.log("Find my list: ", sectionInfo.extra[0].data[0])
+    console.log("Find my list: ", linkList)
 
     return(
         <section className="dark-shade">
@@ -32,11 +48,19 @@ const UseSection:React.FC<IProp> = ({sectionInfo}) => {
                         </span>
                     </div>
                 </div>
-                <div>
-                    <LinkList linkData={sectionInfo.extra[0].data[0]}/>
-                    <LinkList linkData={sectionInfo.extra[0].data[1]}/>
-                    <LinkList linkData={sectionInfo.extra[0].data[2]}/>
-                    <LinkList linkData={sectionInfo.extra[0].data[3]}/>
+                <div className="linklist-wrapper">
+                    {linkList.map((list) => (
+                        <React.Fragment key={list.category}>
+                            <h3>{list.category}</h3>
+                            <span>{list.description}</span>
+                            <ul>
+                                {list.links &&
+                                    list.links.map((link) => (
+                                        <LinkList key={`${list.category}-${link.id}`} linkData={link} category={list.category} />
+                                    ))}
+                            </ul>
+                        </React.Fragment>
+                    ))}
                 </div>
             </div>
         </section>

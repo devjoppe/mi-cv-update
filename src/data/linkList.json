@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "category": "Preferred Web Stack",
+    "description": "",
+    "flag": "use",
+    "links": [
+      {
+        "id": 2,
+        "link_title": "React",
+        "description": "UI library",
+        "url": "https://www.react.dev"
+      },
+      {
+        "id": 3,
+        "link_title": "Vite",
+        "description": "Frontend tooling",
+        "url": "https://www.vitejs.dev"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Experience with",
+    "description": "",
+    "flag": "use",
+    "links": [
+      {
+        "id": 5,
+        "link_title": "Astro",
+        "description": "Headless CMS",
+        "url": "https://www.react.dev"
+      },
+      {
+        "id": 6,
+        "link_title": "Wordpress",
+        "description": "CMS",
+        "url": "https://www.vitejs.dev"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "",
+    "description": "I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript.",
+    "flag": "use",
+    "links": []
+  },
+  {
+    "id": 8,
+    "category": "Tools",
+    "description": "",
+    "flag": "use",
+    "links": [
+      {
+        "id": 9,
+        "link_title": "Github",
+        "description": "Source control",
+        "url": "https://www.react.dev"
+      },
+      {
+        "id": 10,
+        "link_title": "Webstorm",
+        "description": "IDE",
+        "url": "https://www.vitejs.dev"
+      }
+    ]
+  }
+]
