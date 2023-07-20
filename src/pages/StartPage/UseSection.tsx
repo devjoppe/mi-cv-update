@@ -50,7 +50,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                 </div>
                 <div className="linklist-wrapper">
                     {linkList.map((list) => (
-                        <React.Fragment key={list.category}>
+                        <div data-aos="fade-up" key={list.category}>
                             <h3>{list.category}</h3>
                             <span>{list.description}</span>
                             <ul>
@@ -59,7 +59,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                                         <LinkList key={`${list.category}-${link.id}`} linkData={link} />
                                     ))}
                             </ul>
-                        </React.Fragment>
+                        </div>
                     ))}
                 </div>
             </div>

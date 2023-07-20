@@ -37,7 +37,9 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 }
                 <div>
                     {projects && projects.map(project => (
+                        <div data-aos="fade-up">
                             <ProjectCard key={project.title} project={project} shade={project.bg_color}/>
+                        </div>
                     ))}
                 </div>
             </div>

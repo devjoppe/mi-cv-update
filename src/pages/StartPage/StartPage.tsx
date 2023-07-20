@@ -14,7 +14,7 @@ const StartPage = () => {
     return(
         <>
             <section className="dark-shade top-section">
-                <div className="section-content-wrapper">
+                <div className="section-content-wrapper" data-aos="fade-up">
                     {jsonData && jsonData.filter(item => item.id === 1).map(data  => (
                         <div key={data.id}>
                             <h1>{data.title}</h1>
