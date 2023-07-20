@@ -56,7 +56,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                             <ul>
                                 {list.links &&
                                     list.links.map((link) => (
-                                        <LinkList key={`${list.category}-${link.id}`} linkData={link} category={list.category} />
+                                        <LinkList key={`${list.category}-${link.id}`} linkData={link} />
                                     ))}
                             </ul>
                         </React.Fragment>

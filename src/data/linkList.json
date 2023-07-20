@@ -15,54 +15,126 @@
         "id": 3,
         "link_title": "Vite",
         "description": "Frontend tooling",
-        "url": "https://www.vitejs.dev"
+        "url": "https://vitejs.dev/"
+      },
+      {
+        "id": 4,
+        "link_title": "Node.js",
+        "description": "Javascript Runtime",
+        "url": "https://nodejs.org/en"
+      },
+      {
+        "id": 5,
+        "link_title": "Netlify",
+        "description": "Deployment",
+        "url": "https://app.netlify.com/"
+      },
+      {
+        "id": 6,
+        "link_title": "Firebase",
+        "description": "NoSQL Database",
+        "url": "https://firebase.google.com/"
+      },
+      {
+        "id": 7,
+        "link_title": "MySQL",
+        "description": "Relational Database",
+        "url": "https://www.mysql.com/"
+      },
+      {
+        "id": 8,
+        "link_title": "Express",
+        "description": "Node.js Framework",
+        "url": "https://expressjs.com/"
+      },
+      {
+        "id": 9,
+        "link_title": "Prisma",
+        "description": "ORM Database tool",
+        "url": "https://www.prisma.io/"
       }
     ]
   },
   {
-    "id": 4,
+    "id": 10,
     "category": "Experience with",
     "description": "",
     "flag": "use",
     "links": [
       {
-        "id": 5,
+        "id": 11,
         "link_title": "Astro",
-        "description": "Headless CMS",
-        "url": "https://www.react.dev"
+        "description": "Framework",
+        "url": "https://astro.build/"
       },
       {
-        "id": 6,
+        "id": 13,
+        "link_title": "Strapi",
+        "description": "Headless CMS",
+        "url": "https://strapi.io/"
+      },
+      {
+        "id": 15,
+        "link_title": "Sanity",
+        "description": "Content Platform",
+        "url": "https://www.sanity.io/"
+      },
+      {
+        "id": 12,
+        "link_title": "Drupal",
+        "description": "CMS",
+        "url": "https://www.drupal.org/"
+      },
+      {
+        "id": 14,
         "link_title": "Wordpress",
         "description": "CMS",
-        "url": "https://www.vitejs.dev"
+        "url": "http://wordpress.org/"
       }
     ]
   },
   {
-    "id": 7,
+    "id": 20,
     "category": "",
     "description": "I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript.",
     "flag": "use",
     "links": []
   },
   {
-    "id": 8,
+    "id": 31,
     "category": "Tools",
     "description": "",
     "flag": "use",
     "links": [
       {
-        "id": 9,
+        "id": 32,
         "link_title": "Github",
         "description": "Source control",
-        "url": "https://www.react.dev"
+        "url": "https://github.com/"
       },
       {
-        "id": 10,
+        "id": 33,
         "link_title": "Webstorm",
-        "description": "IDE",
-        "url": "https://www.vitejs.dev"
+        "description": "Preferred IDE",
+        "url": "https://www.jetbrains.com/webstorm/"
+      },
+      {
+        "id": 34,
+        "link_title": "Figma",
+        "description": "UX/UI",
+        "url": "https://www.figma.com/"
+      },
+      {
+        "id": 35,
+        "link_title": "Photoshop",
+        "description": "Graphics",
+        "url": "https://www.adobe.com/"
+      },
+      {
+        "id": 36,
+        "link_title": "Notion",
+        "description": "Project planning",
+        "url": "https://www.notion.so/"
       }
     ]
   }
