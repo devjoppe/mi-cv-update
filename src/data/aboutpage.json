@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "About",
+    "kicker": "I find inspiration in simplicity and trust my own process for creativity and productivity, both in my personal life and in my professional career.",
+    "extra": [],
+    "user": "Joakim Ottosson"
+  },
+  {
+    "id": 2,
+    "title": "Selected projects",
+    "kicker": "These projects aim to showcase my skills as a frontend developer.",
+    "extra": [
+      {
+        "data": "I feel comfortable following requirements specifications, but I am also able to develop my own design concepts when needed."
+      }
+    ],
+    "user": ""
+  },
+  {
+    "id": 3,
+    "title": "Freelance projects",
+    "kicker": "Do you need someone to help you get started with your web project? Contact me, and I'm confident we can find a solution.",
+    "extra": [],
+    "user": ""
+  },
+  {
+    "id": 4,
+    "title": "What I use?",
+    "kicker": "In development, I prefer the following technologies. However, my aspiration is to continuously learn new techniques and expand my knowledge to keep evolving as a developer.",
+    "extra": [],
+    "user": ""
+  }
+]
