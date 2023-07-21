@@ -3,28 +3,8 @@ import React from "react";
 // Components
 import LinkList from "../../components/LinkList/LinkList.tsx"
 
-export interface sectionUseInt {
-    id: number,
-    title: string,
-    kicker: string,
-    extra?: object[],
-    user?: string
-}
-
-interface linkListInt {
-    id: number,
-    category: string,
-    description?: string,
-    flag: string,
-    links?:linksInt[]
-}
-
-export interface linksInt {
-    id: number,
-    link_title?: string,
-    description?: string,
-    url?: string
-}
+// Interface
+import {sectionUseInt, linkListInt} from "../../interfaces/linksInt.ts";
 
 interface IProp {
     sectionInfo: sectionUseInt
@@ -49,7 +29,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                     </div>
                 </div>
                 <div className="linklist-wrapper">
-                    {linkList.map((list) => (
+                    {linkList.filter(item => item.flag === "use").map((list) => (
                         <div data-aos="fade-up" key={list.category}>
                             <h3>{list.category}</h3>
                             <span>{list.description}</span>

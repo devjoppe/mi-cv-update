@@ -6,17 +6,8 @@ import projects from '../../data/projects.json'
 // Components
 import ProjectCard from "../../components/ProjectCard/ProjectCard.tsx";
 
-export interface sectionInfoInt {
-    id: number,
-    title: string,
-    kicker: string,
-    extra: [
-        {
-            data: string
-        }
-    ],
-    user: string
-}
+// Interface
+import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";
 
 interface IProp {
     sectionInfo: sectionInfoInt

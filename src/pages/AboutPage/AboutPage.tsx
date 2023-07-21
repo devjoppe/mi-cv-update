@@ -3,6 +3,7 @@ import about from '../../data/aboutpage.json'
 
 // Sections
 import MeSection from "./MeSection.tsx";
+import WorkSection from "./WorkSection.tsx";
 
 const AboutPage = () => {
     return(
@@ -23,6 +24,7 @@ const AboutPage = () => {
                 </div>
             </section>
             <MeSection data={about[1]}/>
+            <WorkSection data={about[3]}/>
         </>
     )
 }
