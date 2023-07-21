@@ -48,14 +48,14 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
         if (project.type === "quote") {
             return (
                 <div className={`card-content ${project.type}`}>
-                    <span className="quote">{project.description}</span>
+                    <span>{project.description}</span>
                 </div>
             )
         }
     }
 
     return(
-        <div className={`project-card-wrapper ${shade} ${project.type}`}>
+        <div className={`project-card-wrapper ${shade}`}>
             <CardType />
         </div>
     )

@@ -13,8 +13,6 @@ const ScrollIndicator = () => {
 
     window.addEventListener("scroll", onScroll)
 
-    console.log(scroll)
-
     return(
         <div className="scroll-indicator">
             <div className="bar" style={{width: `${scroll}%`}}></div>

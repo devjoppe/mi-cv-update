@@ -10,7 +10,11 @@ export interface sectionInfoInt {
     id: number,
     title: string,
     kicker: string,
-    extra: object[],
+    extra: [
+        {
+            data: string
+        }
+    ],
     user: string
 }
 
@@ -37,7 +41,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 }
                 <div>
                     {projects && projects.map(project => (
-                        <div data-aos="fade-up">
+                        <div data-aos="fade-up" key={project.title}>
                             <ProjectCard key={project.title} project={project} shade={project.bg_color}/>
                         </div>
                     ))}

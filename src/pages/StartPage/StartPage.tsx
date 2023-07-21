@@ -1,5 +1,5 @@
 // Page data
-import jsonData from '../../data/startpage.json'
+import start from '../../data/startpage.json'
 import linkData from '../../data/linkList.json'
 
 // Sections
@@ -8,14 +8,11 @@ import FreelanceSection from "./FreelanceSection.tsx";
 import UseSection from "./UseSection.tsx";
 
 const StartPage = () => {
-
-    console.log("jsonData: ", linkData)
-
     return(
         <>
             <section className="dark-shade top-section">
-                <div className="section-content-wrapper" data-aos="fade-up">
-                    {jsonData && jsonData.filter(item => item.id === 1).map(data  => (
+                <div className="section-content-wrapper" data-aos="zoom-out" data-aos-duration="1500">
+                    {start && start.filter(item => item.id === 1).map(data  => (
                         <div key={data.id}>
                             <h1>{data.title}</h1>
                             <span className="subtitle">
@@ -28,9 +25,9 @@ const StartPage = () => {
                     ))}
                 </div>
             </section>
-            <ProjectSection sectionInfo={jsonData[1]} />
+            <ProjectSection sectionInfo={start[1]} />
             <FreelanceSection />
-            <UseSection sectionInfo={jsonData[3]} linkList={linkData} />
+            <UseSection sectionInfo={start[3]} linkList={linkData} />
         </>
     )
 }

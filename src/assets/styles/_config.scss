@@ -48,6 +48,29 @@ a {
     color: $font-main-color;
 }
 
+nav {
+    a {
+        color: $font-main-color;
+        background: $background-shade-a;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        &.active {
+            background: $highlight-selected;
+            color: $font-inverted;
+            margin: 0 8px;
+        }
+        &.standard {
+            padding: 8px 8px;
+        }
+    }
+}
+
 span {
     &.subtitle {
         display: block;
@@ -87,6 +110,15 @@ span {
     }
 }
 
+.quote {
+    display: block;
+    color: #626262;
+    font-size: 18px;
+    border-left: 6px solid $highlight-color;
+    padding-left: 16px;
+    margin: 32px 0;
+}
+
 // Buttons
 button {
     color: $font-main-color;
@@ -101,7 +133,7 @@ button {
     &.standard {
         padding: 8px 8px;
     }
-    &.selected {
+    &.active {
         background: $highlight-selected;
         color: $font-inverted;
         margin: 0 8px;

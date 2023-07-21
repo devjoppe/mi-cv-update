@@ -8,27 +8,31 @@
   },
   {
     "id": 2,
-    "title": "Selected projects",
-    "kicker": "These projects aim to showcase my skills as a frontend developer.",
+    "title": "About me",
+    "kicker": "This is my about kicker info",
     "extra": [
       {
-        "data": "I feel comfortable following requirements specifications, but I am also able to develop my own design concepts when needed."
+        "data": "I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript.."
       }
     ],
     "user": ""
   },
   {
     "id": 3,
-    "title": "Freelance projects",
-    "kicker": "Do you need someone to help you get started with your web project? Contact me, and I'm confident we can find a solution.",
+    "title": "Education",
+    "kicker": "",
     "extra": [],
     "user": ""
   },
   {
     "id": 4,
-    "title": "What I use?",
-    "kicker": "In development, I prefer the following technologies. However, my aspiration is to continuously learn new techniques and expand my knowledge to keep evolving as a developer.",
-    "extra": [],
+    "title": "My career so far",
+    "kicker": "I have nearly 20 years of experience in various professional areas within web development. I have worked at both strategic and operational levels.",
+    "extra": [
+      {
+        "data": "I enjoy working in a process-oriented manner and continuously improving work methodologies that drive progress. Much of my previous knowledge has been carried over into my role as a frontend developer."
+      }
+    ],
     "user": ""
   }
 ]
