@@ -7,7 +7,21 @@ import ProjectSection from "./ProjectSection.tsx";
 import FreelanceSection from "./FreelanceSection.tsx";
 import UseSection from "./UseSection.tsx";
 
+// Redux - Change light - useDispatch for changing value, useSelector for accessing.
+import {useDispatch} from "react-redux";
+import {changeLight} from "../../features/isLight.ts"; // Redux feature to change light
+
+// React
+import {useEffect} from "react";
+
 const StartPage = () => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(changeLight(false))
+    }, [dispatch]);
+
     return(
         <>
             <section className="dark-shade top-section">

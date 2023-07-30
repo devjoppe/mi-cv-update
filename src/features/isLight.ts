@@ -10,14 +10,14 @@ export interface isLightRootStateInt {
 
 export const lightSlice = createSlice({
     name: "isLight",
-    initialState: {
-        light: false
-    } as isLightInt,
+    initialState: { light: false } as isLightInt,
     reducers: {
         changeLight: (state, action:PayloadAction<boolean>) => {
             state.light = action.payload
         }
     }
 })
+
+export const {changeLight} = lightSlice.actions
 
 export default lightSlice.reducer

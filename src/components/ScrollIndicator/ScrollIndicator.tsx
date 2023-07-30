@@ -24,7 +24,7 @@ const ScrollIndicator = () => {
     window.addEventListener("scroll", onScroll)
 
     return(
-        <div className="scroll-indicator">
+        <div className={`${!lightState ? "dark-shade" : "light-shade"} scroll-indicator`}>
             <div className="bar" style={{width: `${scroll}%`}}></div>
         </div>
     )

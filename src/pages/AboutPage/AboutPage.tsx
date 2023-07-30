@@ -5,7 +5,21 @@ import about from '../../data/aboutpage.json'
 import MeSection from "./MeSection.tsx";
 import WorkSection from "./WorkSection.tsx";
 
+// Redux
+import {useDispatch} from "react-redux";
+import {changeLight} from "../../features/isLight.ts";
+
+// React
+import {useEffect} from "react";
+
 const AboutPage = () => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(changeLight(true))
+    }, [dispatch]);
+
     return(
         <>
             <section className="light-shade top-section">
