@@ -1,7 +1,7 @@
 import React from "react"
 
 // Interface
-import {linksInt} from "../../pages/StartPage/UseSection.tsx";
+import {linksInt} from "../../interfaces/linksInt.ts";
 
 interface IProp {
     linkData: linksInt

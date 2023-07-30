@@ -13,7 +13,7 @@ import {changeLight} from "../../features/isLight.ts";
 import {useEffect, useState} from "react";
 
 // Builder
-import {BuilderComponent, builder} from "@builder.io/react";
+import {builder} from "@builder.io/react";
 
 // API
 builder.init(import.meta.env.VITE_API_KEY as string)
