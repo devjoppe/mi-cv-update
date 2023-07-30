@@ -10,15 +10,38 @@ import {useDispatch} from "react-redux";
 import {changeLight} from "../../features/isLight.ts";
 
 // React
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+
+// Builder
+import {BuilderComponent, builder} from "@builder.io/react";
+
+// API
+builder.init(import.meta.env.VITE_API_KEY as string)
 
 const AboutPage = () => {
 
+    const [heroContent, setHeroContent] = useState(null)
     const dispatch = useDispatch()
 
     useEffect(() => {
+        // Redux useDispatch
         dispatch(changeLight(true))
+
+        // Builder -> get data from DB
+        builder.get('hero', {
+            userAttributes: {
+                urlPath: window.location.pathname
+            }
+        })
+            .toPromise().then((data) => {
+            setHeroContent(data)
+        })
+
     }, [dispatch]);
+
+    if(heroContent != null) {
+        console.log("From builder: ", heroContent)
+    }
 
     return(
         <>
