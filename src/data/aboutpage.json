@@ -2,14 +2,14 @@
   {
     "id": 1,
     "title": "About",
-    "kicker": "I find inspiration in simplicity and trust my own process for creativity and productivity, both in my personal life and in my professional career.",
+    "kicker": "I find inspiration in simplicity for creativity and productivity, both in my personal life and in my professional career.",
     "extra": [],
     "user": "Joakim Ottosson"
   },
   {
     "id": 2,
     "title": "About me",
-    "kicker": "This is my about kicker info",
+    "kicker": "Welcome to my website! This site blaha blaha blaha",
     "extra": [
       {
         "data": "I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript.."

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Frontend Developer",
-    "kicker": "My goal is to use my strong analytical skills and careful attention to detail to create services that represent the highest level of quality.",
+    "kicker": "My goal is to use my strong analytical skills and careful attention to detail to create services that represent the high level of quality.",
     "extra": [],
     "user": "Joakim Ottosson"
   },
@@ -12,7 +12,7 @@
     "kicker": "These projects aim to showcase my skills as a frontend developer.",
     "extra": [
       {
-        "data": "I feel comfortable following requirements specifications, but I am also able to develop my own design concepts when needed."
+        "data": "I feel comfortable following design specifications and requirements. But if needed,  I am also able to develop my own concepts and designs."
       }
     ],
     "user": ""

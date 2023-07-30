@@ -30,9 +30,9 @@ const AboutPage = () => {
                             <span className="subtitle">
                                 {data.kicker}
                             </span>
-                            <span className="quote-by">
+                            { /* <span className="quote-by">
                                 - {data.user}
-                            </span>
+                            </span> */ }
                         </div>
                     ))}
                 </div>

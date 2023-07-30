@@ -28,13 +28,14 @@ const StartPage = () => {
                 <div className="section-content-wrapper" data-aos="zoom-out" data-aos-duration="1500">
                     {start && start.filter(item => item.id === 1).map(data  => (
                         <div key={data.id}>
+
                             <h1>{data.title}</h1>
                             <span className="subtitle">
                                 {data.kicker}
                             </span>
-                            <span className="quote-by">
+                            { /* <span className="quote-by">
                                 - {data.user}
-                            </span>
+                            </span> */ }
                         </div>
                     ))}
                 </div>
