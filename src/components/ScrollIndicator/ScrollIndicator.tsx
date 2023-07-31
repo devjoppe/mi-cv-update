@@ -19,8 +19,6 @@ const ScrollIndicator = () => {
         setScroll(scrollPercent)
     }
 
-    console.log("Scroll indicator: IsLight: ", lightState)
-
     window.addEventListener("scroll", onScroll)
 
     return(

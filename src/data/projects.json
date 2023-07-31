@@ -51,7 +51,7 @@
     "id": 14,
     "type": "card-small",
     "image": "",
-    "title": "Find a developer",
+    "title": "Developer finder",
     "description": "By using Github's API, I created an app where you can search for users along with their associated information. I followed a specification and built the app using React and CSS.",
     "tags": ["React", "TypeScript", "Netlify"],
     "github": "https://github.com/devjoppe/github-user-search-app",
