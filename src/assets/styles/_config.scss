@@ -58,6 +58,7 @@ a {
 }
 
 nav {
+    height: 28px;
     a {
         color: $font-main-color;
         // background: $background-shade-a;
@@ -125,6 +126,7 @@ span {
     }
 }
 
+// Other components
 .quote {
     display: block;
     color: #626262;
@@ -143,6 +145,13 @@ span {
 // Divs
 .filter-block {
     margin-bottom: 32px;
+}
+
+// Images
+img {
+    &.darkmode-icon {
+        height: 16px;
+    }
 }
 
 
@@ -170,7 +179,7 @@ button {
         color: $font-inverted;
     }
     &.filter {
-        border: 1px solid #dfdfdf;
+        border: 1px solid #e8e8e8;
         margin-right: 6px;
         margin-bottom: 6px;
     }

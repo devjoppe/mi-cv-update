@@ -1,4 +1,6 @@
+// Graphics
 import Logo from '../../assets/images/jo-logo.svg'
+import darkMode from '../../assets/icons/dark-theme.svg'
 
 // React Router
 import {NavLink} from "react-router-dom";
@@ -31,6 +33,9 @@ const Header = () => {
                             contact
                         </NavLink>
                     </nav>
+                    <button>
+                        <img className="darkmode-icon" src={darkMode} alt="Dark mode" />
+                    </button>
                 </div>
             </div>
         </header>

@@ -16,6 +16,16 @@
     z-index: 100;
 }
 
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    button {
+        display: flex;
+        align-items: center;
+        background: none !important;
+    }
+}
+
 .logo-wrapper {
     img {
         height: 31px;
