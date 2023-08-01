@@ -1,3 +1,4 @@
+// React
 import React, {useEffect, useState} from "react";
 
 // JSON data
@@ -8,6 +9,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard.tsx";
 
 // Interface
 import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";
+import {projectInt} from "../../interfaces/projectCardInt.ts";
 
 interface IProp {
     sectionInfo: sectionInfoInt
@@ -15,7 +17,12 @@ interface IProp {
 
 const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
 
+    // Console.log styling for debugging
+    // const log = "background: lightgreen; color: green; padding: 3px;"
+    // const warning = "background: red; color: darkred; padding: 3px;"
+
     const [filteredTags, setFilteredTags] = useState<string[]>([])
+    const [projectList, setProjectList] = useState<projectInt[]>(projects)
 
     // Filter out tags from the projects
     const allProjectTags:string[] = []
@@ -28,22 +35,14 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
     // Unique button tags
     const buttonTags:string[] = [...new Set(allProjectTags)]
 
-    useEffect(() => {
-
-    }, []);
-
     // Function to filter projects
     const filterProjects = (tag: string) => {
-        console.log("Filter projects: ", tag )
-
         // Check if the tag already exist
         // If exists, remove from filteredTags
         const checkTag = filteredTags.find(checkTag => checkTag === tag)
-        console.log("Checking tag: ", checkTag)
 
         if(checkTag) {
             setFilteredTags(filteredTags.filter(currentTag => currentTag !== tag))
-            console.log("Tag already exist and selected")
             return
         } else {
             // Update array with pushed button
@@ -53,13 +52,20 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
         }
     }
 
-    // Filter project based on that array
-
-    // If string exist, remove it from the array.
-
-    // If no string, show all
-
-    console.log("Filtered tags: ", filteredTags)
+    // Filter projects based on filterTags array:
+    useEffect(() => {
+        if(filteredTags.length > 0) {
+            setProjectList(
+                projects.filter(project =>
+                    project.tags?.some(tag =>
+                        filteredTags.includes(tag)
+                    )
+                )
+            )
+        } else {
+            setProjectList(projects)
+        }
+    }, [filteredTags]);
 
     return (
         <section className="light-shade">
@@ -83,7 +89,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                     ))}
                 </div>
                 <div>
-                    { projects && projects.map(project => (
+                    { projectList && projectList.map(project => (
                         <div data-aos="fade-up" key={project.title}>
                             <ProjectCard key={project.title} project={project} shade={project.bg_color}/>
                         </div>

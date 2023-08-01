@@ -6,7 +6,7 @@ import {projectInt} from "../../interfaces/projectCardInt.ts";
 
 interface IProp {
     project: projectInt
-    shade: string
+    shade: string | undefined
 }
 
 const ProjectCard:React.FC<IProp> = ({project, shade}) => {
