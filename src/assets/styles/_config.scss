@@ -9,39 +9,39 @@ $blender-heavy: blender-pro-heavy, sans-serif;
 $blender-medium: blender-pro-medium, sans-serif;
 $blender-regular: blender-pro-regular, sans-serif;
 
-// Color-Backgrounds
-$background-shade-a: #EBEBEB;
-$background-shade-b: #F4F4F4;
-$background-shade-special: #0A0A0A;
-// Color-Fonts
-$font-main-color: #0A0A0A;
-$font-secondary-color: #626262;
-$font-inverted: #F4F4F4;
-// Color-Highlight
-$highlight-color: #7CAAD4;
-$highlight-selected: #0A0A0A;
+:root {
+    // Color-Backgrounds
+    --background-shade-a: #EBEBEB;
+    --background-shade-b: #F4F4F4;
+    --background-shade-special: #0A0A0A;
+    // Color-Fonts
+    --font-main-color: #0A0A0A;
+    --font-secondary-color: #626262;
+    --font-inverted: #F4F4F4;
+    // Color-Highlight
+    --highlight-color: #7CAAD4;
+    --highlight-selected: #0A0A0A;
+}
 
 // body
 body {
-    background: $background-shade-a;
+    background: var(--background-shade-a);
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-    color: $font-main-color;
+    color: var(--font-main-color);
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1 {
     font-family: $blender-heavy;
-    // font-family: 'Inter', sans-serif;
     font-size: 62px;
     line-height: 58px;
 }
 
 h2, h3, h4 {
     font-family: $blender-medium;
-    // font-family: 'Kreon', serif;
-    color: $font-main-color;
+    color: var(--font-main-color);
 }
 
 h2 {
@@ -54,13 +54,13 @@ h3 {
 }
 
 a {
-    color: $font-main-color;
+    color: var(--font-main-color);
 }
 
 nav {
     height: 28px;
     a {
-        color: $font-main-color;
+        color: var(--font-main-color);
         // background: $background-shade-a;
         // font-family: 'Poppins', sans-serif;
         font-family: $blender-heavy;
@@ -70,8 +70,8 @@ nav {
         border-radius: 5px;
         text-decoration: none;
         &.active {
-            background: $highlight-selected;
-            color: $font-inverted;
+            background: var(--highlight-selected);
+            color: var(--font-inverted);
             margin: 0 8px;
         }
         &.standard {
@@ -83,13 +83,12 @@ nav {
 span {
     &.subtitle {
         display: block;
-        border-left: 6px solid $highlight-color;
+        border-left: 6px solid var(--highlight-color);
         padding-left: 16px;
         margin-bottom: 32px;
         font-family: $blender-medium;
-        // font-family: 'Kreon', serif;
         font-size: 24px;
-        color: $font-secondary-color;
+        color: var(--font-secondary-color);
     }
     &.kicker {
         display: block;
@@ -113,16 +112,16 @@ span {
 
 // Colors components
 .light-shade {
-    background: $background-shade-b;
+    background: var(--background-shade-b);
 }
 .dark-shade {
-    background: $background-shade-a;
+    background: var(--background-shade-a);
 }
 .inverted-shade {
-    background: $background-shade-special;
-    color: $font-inverted;
+    background: var(--background-shade-special);
+    color: var(--font-inverted);
     h2, h3, h4 {
-        color: $font-inverted;
+        color: var(--font-inverted);
     }
 }
 
@@ -131,7 +130,7 @@ span {
     display: block;
     color: #626262;
     font-size: 18px;
-    border-left: 6px solid $highlight-color;
+    border-left: 6px solid var(--highlight-color);
     padding-left: 16px;
     margin: 32px 0;
 }
@@ -157,10 +156,9 @@ img {
 
 // Buttons
 button {
-    color: $font-main-color;
-    background: $background-shade-a;
+    color: var(--font-main-color);
+    background: var(--background-shade-a);
     font-family: $blender-heavy;
-    // font-family: 'Poppins', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     border: none;
@@ -170,13 +168,13 @@ button {
         padding: 8px 8px;
     }
     &.active {
-        background: $highlight-selected;
-        color: $font-inverted;
+        background: var(--highlight-selected);
+        color: var(--font-inverted);
         margin: 0 8px;
     }
     &.selected {
-        background: $background-shade-special !important;
-        color: $font-inverted;
+        background: var(--background-shade-special) !important;
+        color: var(--font-inverted);
     }
     &.filter {
         border: 1px solid #e8e8e8;

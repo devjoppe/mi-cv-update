@@ -3,7 +3,7 @@
 .project-card-wrapper {
     img {
         display: block;
-        border-bottom: 6px solid config.$highlight-color;
+        border-bottom: 6px solid var(--highlight-color);
         width: 100%;
         height: auto;
         border-top-left-radius: 10px;
@@ -11,11 +11,9 @@
     }
     &.card-large {
         border-radius: 10px;
-        //border: 1px solid #E0E0E0;
     }
     &.card-small {
         border-radius: 10px;
-        //border: 1px solid #E0E0E0;
     }
     margin-bottom: 24px;
     border-radius: 10px;
@@ -50,8 +48,8 @@
 
 .card-buttons {
     button {
-        background: config.$background-shade-special;
-        color: config.$font-inverted;
+        background: var(--background-shade-special);
+        color: var(--font-inverted);
         margin-right: 8px;
         &:last-child {
             margin-right: 0;
