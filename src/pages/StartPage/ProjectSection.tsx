@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 // JSON data
 import projects from '../../data/projects.json'
@@ -28,24 +28,38 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
     // Unique button tags
     const buttonTags:string[] = [...new Set(allProjectTags)]
 
+    useEffect(() => {
+
+    }, []);
+
     // Function to filter projects
     const filterProjects = (tag: string) => {
         console.log("Filter projects: ", tag )
 
-        // Update array with pushed button
-        setFilteredTags(prevState => (
-            [...prevState, tag]
-        ))
+        // Check if the tag already exist
+        // If exists, remove from filteredTags
+        const checkTag = filteredTags.find(checkTag => checkTag === tag)
+        console.log("Checking tag: ", checkTag)
 
-        console.log("Filtered tags: ", filteredTags)
-
-        // Filter project based on that array
-
-        // If string exist, remove it from the array.
-
-        // If no string, show all
-
+        if(checkTag) {
+            setFilteredTags(filteredTags.filter(currentTag => currentTag !== tag))
+            console.log("Tag already exist and selected")
+            return
+        } else {
+            // Update array with pushed button
+            setFilteredTags(prevState => (
+              [...prevState, tag]
+            ))
+        }
     }
+
+    // Filter project based on that array
+
+    // If string exist, remove it from the array.
+
+    // If no string, show all
+
+    console.log("Filtered tags: ", filteredTags)
 
     return (
         <section className="light-shade">
@@ -63,8 +77,9 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                     </div>
                 }
                 <div>
+                    <span>Filter projects</span>
                     { buttonTags && buttonTags.map(tag => (
-                        <button onClick={() => filterProjects(tag)}>{tag}</button>
+                        <button key={tag} className={`${filteredTags && filteredTags.find(item => item === tag) ? "selected" : ""} filter`} onClick={() => filterProjects(tag)}>{tag}</button>
                     ))}
                 </div>
                 <div>

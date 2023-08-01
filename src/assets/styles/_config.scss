@@ -134,6 +134,9 @@ span {
     border-radius: 5px;
 }
 
+// Divs
+
+
 // Buttons
 button {
     color: $font-main-color;
@@ -152,5 +155,14 @@ button {
         background: $highlight-selected;
         color: $font-inverted;
         margin: 0 8px;
+    }
+    &.selected {
+        background: $background-shade-special !important;
+        color: $font-inverted;
+    }
+    &.filter {
+        border: 1px solid #dfdfdf;
+        margin-right: 6px;
+        margin-bottom: 6px;
     }
 }
