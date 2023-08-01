@@ -46,7 +46,7 @@ const MeSection:React.FC<IProp> = ({data}) => {
                                 <ul>
                                     {list.links &&
                                         list.links.map((link) => (
-                                            <div>
+                                            <div key={"list-list-"+list.category}>
                                                 <LinkList key={`${list.category}-${link.id}`} linkData={link} style={0} />
                                             </div>
                                         ))

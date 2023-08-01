@@ -102,6 +102,12 @@ span {
     &.quote-by {
         font-size: 16px;
     }
+    &.filter-tags {
+        font-family: $blender-heavy;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 8px;
+    }
 }
 
 // Colors components
@@ -135,6 +141,9 @@ span {
 }
 
 // Divs
+.filter-block {
+    margin-bottom: 32px;
+}
 
 
 // Buttons
