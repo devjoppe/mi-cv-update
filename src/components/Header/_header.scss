@@ -27,6 +27,8 @@
 }
 
 .logo-wrapper {
+    display: flex;
+    align-items: center;
     img {
         height: 31px;
     }

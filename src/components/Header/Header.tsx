@@ -1,5 +1,6 @@
 // Graphics
-import Logo from '../../assets/images/jo-logo.svg'
+// import Logo from '../../assets/images/jo-logo.svg'
+import Logo from '../../assets/images/jo-logo-2x_exSvg.png'
 import darkMode from '../../assets/icons/dark-theme.svg'
 
 // React Router
