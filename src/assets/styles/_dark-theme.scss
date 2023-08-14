@@ -1,5 +1,21 @@
 @use 'config';
 
 [data-theme="darkmode"] {
-
+    // Color-backgrounds
+    --background-shade-a: #1B1B1B;
+    --background-shade-b: #212121;
+    --background-shade-special: #373737;
+    --background-shade-footer: #0A0A0A;
+    // Color-Fonts
+    --font-main-color: #EBEBEB;
+    --font-secondary-color: #BFBFBF;
+    --font-inverted: #BFBFBF;
+    // Color-Highlight
+    --highlight-color: #7CAAD4;
+    --highlight-selected: #7CAAD4;
+    // Button-Special
+    --border-default: #373737;
+    --button-selected: #212121;
+    // list-Special
+    --list-border-default: #373737;
 }

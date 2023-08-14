@@ -2,7 +2,7 @@
 import {Routes, Route} from "react-router-dom";
 
 // React
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 // Layout
 import Layout from "./layout/Layout.tsx";
@@ -18,18 +18,22 @@ import "aos/dist/aos.css";
 
 function App() {
 
+    const [useTheme, setUseTheme] = useState('darkmode')
+
     useEffect(() => {
         AOS.init()
         AOS.refresh()
     }, [])
 
     return (
-    <Routes>
-        <Route path="/" element={<Layout />} >
-            <Route index element={<StartPage />} />
-            <Route path="/about" element={<AboutPage />} />
-        </Route>
-    </Routes>
+    <div data-theme={useTheme}>
+        <Routes>
+            <Route path="/" element={<Layout />} >
+                <Route index element={<StartPage />} />
+                <Route path="/about" element={<AboutPage />} />
+            </Route>
+        </Routes>
+    </div>
     )
     }
 

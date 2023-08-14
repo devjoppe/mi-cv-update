@@ -14,6 +14,7 @@ $blender-regular: blender-pro-regular, sans-serif;
     --background-shade-a: #EBEBEB;
     --background-shade-b: #F4F4F4;
     --background-shade-special: #0A0A0A;
+    --background-shade-footer: EBEBEB;
     // Color-Fonts
     --font-main-color: #0A0A0A;
     --font-secondary-color: #626262;
@@ -21,15 +22,20 @@ $blender-regular: blender-pro-regular, sans-serif;
     // Color-Highlight
     --highlight-color: #7CAAD4;
     --highlight-selected: #0A0A0A;
+    // Button-special
+    --border-default: #e8e8e8;
+    --button-selected: #F4F4F4;
+    // list-Special
+    --list-border-default: #F4F4F4;
 }
 
-// body
+// body!
 body {
     background: var(--background-shade-a);
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-    color: var(--font-main-color);
+    // color: var(--font-main-color);
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -37,6 +43,7 @@ h1 {
     font-family: $blender-heavy;
     font-size: 62px;
     line-height: 58px;
+    color: var(--font-main-color);
 }
 
 h2, h3, h4 {
@@ -61,8 +68,6 @@ nav {
     height: 28px;
     a {
         color: var(--font-main-color);
-        // background: $background-shade-a;
-        // font-family: 'Poppins', sans-serif;
         font-family: $blender-heavy;
         font-size: 12px;
         border: none;
@@ -71,7 +76,7 @@ nav {
         text-decoration: none;
         &.active {
             background: var(--highlight-selected);
-            color: var(--font-inverted);
+            color: var(--button-selected);
             margin: 0 8px;
         }
         &.standard {
@@ -95,6 +100,7 @@ span {
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
         margin-bottom: 32px;
+        color: var(--font-secondary-color);
     }
     &.comment {
         font-family: 'Poppins', sans-serif;
@@ -107,6 +113,10 @@ span {
         font-size: 16px;
         display: block;
         margin-bottom: 8px;
+        color: var(--font-secondary-color);
+    }
+    &.body-text {
+        color: var(--font-secondary-color);
     }
 }
 
@@ -174,10 +184,10 @@ button {
     }
     &.selected {
         background: var(--background-shade-special) !important;
-        color: var(--font-inverted);
+        color: var(--button-selected);
     }
     &.filter {
-        border: 1px solid #e8e8e8;
+        border: 1px solid var(--border-default);
         margin-right: 6px;
         margin-bottom: 6px;
     }

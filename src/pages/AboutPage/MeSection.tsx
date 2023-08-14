@@ -16,7 +16,7 @@ interface IProp {
 
 const MeSection:React.FC<IProp> = ({data}) => {
     return(
-        <section>
+        <section className="dark-shade">
             <div className="section-content-wrapper">
                 {data &&
                     <div>
@@ -28,7 +28,7 @@ const MeSection:React.FC<IProp> = ({data}) => {
                             <span className="quote">
                                 {data.kicker}
                             </span>
-                            <span>
+                            <span className="body-text">
                                 {data.extra && data.extra[0].data}
                             </span>
                         </div>

@@ -32,7 +32,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                     {linkList.filter(item => item.flag === "use").map((list) => (
                         <div data-aos="fade-up" key={list.category}>
                             <h3>{list.category}</h3>
-                            <span>{list.description}</span>
+                            <span className="link-description">{list.description}</span>
                             <ul>
                                 {list.links &&
                                     list.links.map((link) => (

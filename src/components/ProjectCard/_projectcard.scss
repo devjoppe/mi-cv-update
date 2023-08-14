@@ -20,6 +20,7 @@
 }
 
 .card-content {
+    color: var(--font-secondary-color);
     &.card-small {
         padding: 24px;
     }
@@ -37,11 +38,11 @@
     .tags {
         span {
             font-size: 12px;
-            background: #dcdcdc;
+            background: var(--background-shade-special);
             border-radius: 3px;
             margin-right: 6px;
             padding: 4px 6px;
-            color: #7f7f7f;
+            color: var(--font-secondary-color);
         }
     }
 }
