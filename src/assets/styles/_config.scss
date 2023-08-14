@@ -19,14 +19,26 @@ $blender-regular: blender-pro-regular, sans-serif;
     --font-main-color: #0A0A0A;
     --font-secondary-color: #626262;
     --font-inverted: #F4F4F4;
+    --font-kicker: var(--font-secondary-color);
+    --font-kicker-inverted: var(--font-inverted);
     // Color-Highlight
     --highlight-color: #7CAAD4;
     --highlight-selected: #0A0A0A;
     // Button-special
     --border-default: #e8e8e8;
     --button-selected: #F4F4F4;
+    --filter-button-background: var(--background-shade-special);
+    --tags-background: #e0e0e0;
     // list-Special
     --list-border-default: #F4F4F4;
+}
+
+// Mixins
+@mixin kicker-mixin {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 32px;
 }
 
 // body!
@@ -96,11 +108,12 @@ span {
         color: var(--font-secondary-color);
     }
     &.kicker {
-        display: block;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        margin-bottom: 32px;
-        color: var(--font-secondary-color);
+        @include kicker-mixin;
+        color: var(--font-kicker);
+    }
+    &.inverted-kicker {
+        @include kicker-mixin;
+        color: var(--font-kicker-inverted);
     }
     &.comment {
         font-family: 'Poppins', sans-serif;
@@ -135,7 +148,7 @@ span {
     }
 }
 
-// Other components
+// Misc components
 .quote {
     display: block;
     color: #626262;
@@ -151,7 +164,6 @@ span {
     border-radius: 5px;
 }
 
-// Divs
 .filter-block {
     margin-bottom: 32px;
 }
@@ -169,7 +181,6 @@ img {
         }
     }
 }
-
 
 // Buttons
 button {
@@ -195,7 +206,7 @@ button {
     }
     &.filter {
         border: 1px solid var(--border-default);
-        margin-right: 6px;
-        margin-bottom: 6px;
+        margin-right: 4px;
+        margin-bottom: 4px;
     }
 }

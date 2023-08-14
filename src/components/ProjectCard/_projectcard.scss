@@ -38,7 +38,7 @@
     .tags {
         span {
             font-size: 12px;
-            background: var(--background-shade-special);
+            background: var(--tags-background);
             border-radius: 3px;
             margin-right: 6px;
             padding: 4px 6px;
@@ -49,7 +49,8 @@
 
 .card-buttons {
     button {
-        background: var(--background-shade-special);
+        background: var(--filter-button-background);
+        border: 1px solid var(--border-default);
         color: var(--font-inverted);
         margin-right: 8px;
         &:last-child {

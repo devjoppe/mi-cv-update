@@ -4,18 +4,22 @@
     // Color-backgrounds
     --background-shade-a: #1B1B1B;
     --background-shade-b: #212121;
-    --background-shade-special: #373737;
+    --background-shade-special: #2b2b2b;
     --background-shade-footer: #0A0A0A;
     // Color-Fonts
     --font-main-color: #EBEBEB;
     --font-secondary-color: #BFBFBF;
     --font-inverted: #BFBFBF;
+    --font-kicker: var(--font-secondary-color);
+    --font-kicker-inverted: var(--font-inverted);
     // Color-Highlight
     --highlight-color: #7CAAD4;
     --highlight-selected: #7CAAD4;
     // Button-Special
     --border-default: #373737;
     --button-selected: #212121;
+    --filter-button-background: var(--background-shade-special);
+    --tags-background: var(--background-shade-special);
     // list-Special
     --list-border-default: #373737;
 }

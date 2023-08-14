@@ -7,7 +7,7 @@ const FreelanceSection = () => {
                         <h2>Freelance projects</h2>
                     </div>
                     <div>
-                        <span className="kicker">
+                        <span className="inverted-kicker">
                             I can help you get started with your web project? Contact me, and I'm confident we can find a solution.
                         </span>
                         <button>
