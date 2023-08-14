@@ -146,6 +146,12 @@ span {
     h2, h3, h4 {
         color: var(--font-inverted);
     }
+    button {
+        background: var(--border-default);
+        border: 1px solid var(--font-main-color);
+        color: var(--font-main-color);
+        margin-right: 8px;
+    }
 }
 
 // Misc components
