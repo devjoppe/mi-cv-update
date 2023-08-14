@@ -1,5 +1,7 @@
+// Redux
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 
+// Interfaces
 export interface isLightInt {
     light: boolean
 }

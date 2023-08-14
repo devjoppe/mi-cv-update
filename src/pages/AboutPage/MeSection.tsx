@@ -1,7 +1,7 @@
 import React from "react";
 
 // Links data and page data
-import links from '../../data/linkList.json'
+import links from '../../data/linklist.json'
 import myImage from '../../../public/assets/images/about-me-jo.png'
 
 // Interface

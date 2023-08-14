@@ -7,14 +7,17 @@ import darkMode from '../../assets/icons/dark-theme.svg'
 import {NavLink} from "react-router-dom";
 
 // Redux
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 // Interface
 import {isLightRootStateInt} from "../../features/isLight.ts";
+import {changeMode, isModeRootStateInt} from "../../features/isMode.ts";
 
 const Header = () => {
 
     const lightState = useSelector((state:isLightRootStateInt) => state.isLight.light)
+    const themeState = useSelector((state:isModeRootStateInt) => state.isMode.mode)
+    const setMode = useDispatch()
 
     return (
         <header>
@@ -34,8 +37,10 @@ const Header = () => {
                             contact
                         </NavLink>
                     </nav>
-                    <button>
-                        <img className="darkmode-icon" src={darkMode} alt="Dark mode" />
+                    <button onClick={() => {
+                        themeState === "lightmode" ? setMode(changeMode("darkmode")) : setMode(changeMode("lightmode"))
+                    }}>
+                        <img className="icon darkmode" src={darkMode} alt="Dark mode" />
                     </button>
                 </div>
             </div>

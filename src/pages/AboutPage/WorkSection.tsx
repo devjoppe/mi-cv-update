@@ -1,7 +1,7 @@
 import React from "react";
 
 // JSON data
-import links from "../../data/linkList.json";
+import links from "../../data/linklist.json";
 
 // Interface
 import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";

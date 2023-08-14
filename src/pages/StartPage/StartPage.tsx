@@ -1,6 +1,6 @@
 // Page data
 import start from '../../data/startpage.json'
-import linkData from '../../data/linkList.json'
+import linkData from '../../data/linklist.json'
 
 // Sections
 import ProjectSection from "./ProjectSection.tsx";

@@ -158,8 +158,15 @@ span {
 
 // Images
 img {
-    &.darkmode-icon {
-        height: 16px;
+    &.icon {
+        &.darkmode {
+            height: 16px;
+            filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(9deg) brightness(105%) contrast(104%);
+        }
+        &.lightmode {
+            height: 16px;
+            filter: invert(0%) sepia(78%) saturate(850%) hue-rotate(19deg) brightness(119%) contrast(92%);
+        }
     }
 }
 
