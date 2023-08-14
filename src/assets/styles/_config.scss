@@ -14,7 +14,7 @@ $blender-regular: blender-pro-regular, sans-serif;
     --background-shade-a: #EBEBEB;
     --background-shade-b: #F4F4F4;
     --background-shade-special: #0A0A0A;
-    --background-shade-footer: EBEBEB;
+    --background-shade-footer: var(--background-shade-special);
     // Color-Fonts
     --font-main-color: #0A0A0A;
     --font-secondary-color: #626262;
@@ -29,8 +29,8 @@ $blender-regular: blender-pro-regular, sans-serif;
     --button-selected: #F4F4F4;
     --filter-button-background: var(--background-shade-special);
     --tags-background: #e0e0e0;
-    // list-Special
-    --list-border-default: #F4F4F4;
+    // list-Specials
+    --list-border-default: #dbdbdb;
 }
 
 // Mixins
@@ -151,7 +151,7 @@ span {
 // Misc components
 .quote {
     display: block;
-    color: #626262;
+    color: var(--font-secondary-color);
     font-size: 18px;
     border-left: 6px solid var(--highlight-color);
     padding-left: 16px;
