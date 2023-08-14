@@ -1,8 +1,12 @@
 // React
 import React from "react";
 
+// Icons
+import openWindow from '../../assets/icons/new_window_icon.svg'
+
 // Interface
 import {projectInt} from "../../interfaces/projectCardInt.ts";
+
 
 interface IProp {
     project: projectInt
@@ -14,6 +18,7 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
     const goToPage = (url:string) => {
         window.open(url)
     }
+
     const CardType = () => {
         if (project.type  === "card-small" || project.type ===  "card-large") {
             return (
@@ -28,8 +33,8 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
                     </div>
                     <p>{project.description}</p>
                     <div className="card-buttons">
-                        <button onClick={() => goToPage(project.github)}>Project on Github</button>
-                        <button onClick={() => goToPage(project.solution)}>View solution</button>
+                        <button className="icon-button" onClick={() => goToPage(project.github)}>On Github <img src={openWindow} className="icon inverted" alt="Open in new window"/></button>
+                        <button className="icon-button" onClick={() => goToPage(project.solution)}>View solution <img src={openWindow} className="icon inverted" alt="Open in new window"/></button>
                     </div>
                 </div>
                 </>

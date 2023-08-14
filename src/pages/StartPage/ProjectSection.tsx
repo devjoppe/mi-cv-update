@@ -83,7 +83,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                     </div>
                 }
                 <div className="filter-block">
-                    <span className="filter-tags">Filter ({projectList.length} of {projects.length})</span>
+                    <span className="filter-tags">Filter ( {projectList.length} of {projects.length})</span>
                     { buttonTags && buttonTags.map(tag => (
                         <button key={tag} className={`${filteredTags && filteredTags.find(item => item === tag) ? "selected" : ""} filter`} onClick={() => filterProjects(tag)}>{tag}</button>
                     ))}

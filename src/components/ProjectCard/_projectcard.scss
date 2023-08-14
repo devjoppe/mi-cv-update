@@ -48,6 +48,7 @@
 }
 
 .card-buttons {
+    display: flex;
     button {
         background: var(--filter-button-background);
         border: 1px solid var(--border-default);
