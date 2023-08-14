@@ -13,12 +13,21 @@ import {useDispatch, useSelector} from "react-redux";
 // Interface
 import {isLightRootStateInt} from "../../features/isLight.ts";
 import {changeMode, isModeRootStateInt} from "../../features/isMode.ts";
+import {useEffect, useState} from "react";
 
 const Header = () => {
 
+    const [changedState, setChangedState] = useState<string|null>(null)
     const lightState = useSelector((state:isLightRootStateInt) => state.isLight.light)
     const themeState = useSelector((state:isModeRootStateInt) => state.isMode.mode)
     const setMode = useDispatch()
+
+    useEffect(() => {
+        if(changedState !== null) {
+            setMode(changeMode(changedState))
+            localStorage.setItem('isMode', changedState)
+        }
+    }, [changedState]);
 
     return (
         <header>
@@ -41,7 +50,7 @@ const Header = () => {
                         </NavLink>
                     </nav>
                     <button onClick={() => {
-                        themeState === "lightmode" ? setMode(changeMode("darkmode")) : setMode(changeMode("lightmode"))
+                        themeState === "lightmode" ? setChangedState('darkmode') : setChangedState('lightmode')
                     }}>
                         <img className={`icon ${themeState}`} src={darkMode} alt="Dark mode" />
                     </button>

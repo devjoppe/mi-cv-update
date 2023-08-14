@@ -5,7 +5,7 @@ import {Routes, Route} from "react-router-dom";
 import {useEffect} from "react";
 
 // Redux
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 // Layout
 import Layout from "./layout/Layout.tsx";
@@ -15,16 +15,23 @@ import StartPage from "./pages/StartPage/StartPage.tsx";
 import AboutPage from "./pages/AboutPage/AboutPage.tsx";
 
 // Interfaces
-import {isModeRootStateInt} from "./features/isMode.ts";
+import {changeMode, isModeRootStateInt} from "./features/isMode.ts";
 
 // AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 function App() {
 
     const themeState = useSelector((state:isModeRootStateInt) => state.isMode.mode)
+    const setMode = useDispatch()
+
+    // Check localStorage for dork/light mode
+    const checkMode = localStorage.getItem('isMode')
+    if(checkMode !==  null) {
+        console.log("Checking from local storage", checkMode)
+        setMode(changeMode(checkMode))
+    }
 
     useEffect(() => {
         AOS.init()
