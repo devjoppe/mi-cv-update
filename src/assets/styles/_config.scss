@@ -54,8 +54,9 @@ body {
 h1 {
     font-family: $blender-heavy;
     font-size: 62px;
-    line-height: 58px;
+    line-height: 48px;
     color: var(--font-main-color);
+    margin: 32px 0;
 }
 
 h2, h3, h4 {
@@ -202,6 +203,7 @@ button {
     border: none;
     padding: 8px 16px;
     border-radius: 5px;
+    cursor: pointer;
     &.icon-button {
         display: flex;
         img {

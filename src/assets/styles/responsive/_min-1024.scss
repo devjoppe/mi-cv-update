@@ -1,3 +1,26 @@
 @media screen and (min-width: 1024px) {
+    // Headings
+    h1 {
+        font-size: 128px;
+        line-height: 98px;
+        margin: 48px 0;
+    }
 
+    // Header
+    .header-wrapper {
+        width: 992px;
+    }
+    .logo-wrapper {
+        img {
+            height: 48px;
+        }
+    }
+
+    // Text
+    span {
+        &.subtitle {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
 }

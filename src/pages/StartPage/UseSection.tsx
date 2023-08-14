@@ -12,9 +12,6 @@ interface IProp {
 }
 
 const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
-
-    console.log("Find my list: ", linkList)
-
     return(
         <section className="dark-shade">
             <div className="section-content-wrapper">

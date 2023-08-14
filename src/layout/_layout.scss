@@ -20,3 +20,8 @@ section {
         padding: 0 32px;
     }
 }
+
+.section-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
