@@ -6,6 +6,10 @@
         margin: 48px 0;
     }
 
+    h2 {
+        margin-top: 0;
+    }
+
     // Header
     .header-wrapper {
         width: 992px;
@@ -14,6 +18,60 @@
         img {
             height: 48px;
         }
+    }
+
+    // Sections
+    .section-content-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 992px;
+    }
+
+    .right-pane {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        padding-left: 16px;
+        flex-wrap: wrap;
+    }
+
+    .left-pane {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        padding-right: 16px;
+    }
+
+    // Project card
+    .project-card-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .project-card {
+        display: flex;
+        // flex-grow: 2;
+    }
+
+    .project-card-wrapper {
+        display: block;
+    }
+
+    .card-content {
+        &.card-large {
+            width: auto;
+        }
+        &.card-small {
+            width: auto;
+        }
+    }
+
+    .card-large {
+
+    }
+    .card-small {
+        width: 49%;
     }
 
     // Text

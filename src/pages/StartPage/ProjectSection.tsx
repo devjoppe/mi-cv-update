@@ -67,11 +67,13 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
         }
     }, [filteredTags]);
 
+    // Todo: Tuesday -> working on splitting up the h2 and content on desktop view.
+
     return (
         <section className="light-shade">
             <div className="section-content-wrapper">
                 {sectionInfo &&
-                    <div>
+                    <div className="left-pane">
                         <div>
                             <h2>{sectionInfo.title}</h2>
                         </div>
@@ -82,18 +84,20 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                         </div>
                     </div>
                 }
-                <div className="filter-block">
-                    <span className="filter-tags">Filter ( {projectList.length} of {projects.length})</span>
-                    { buttonTags && buttonTags.map(tag => (
-                        <button key={tag} className={`${filteredTags && filteredTags.find(item => item === tag) ? "selected" : ""} filter`} onClick={() => filterProjects(tag)}>{tag}</button>
-                    ))}
-                </div>
-                <div>
-                    { projectList && projectList.map(project => (
-                        <div data-aos="fade-up" key={project.title}>
-                            <ProjectCard key={project.title} project={project} shade={project.bg_color}/>
-                        </div>
-                    ))}
+                <div className="right-pane">
+                    <div className="filter-block">
+                        <span className="filter-tags">Filter ( {projectList.length} of {projects.length})</span>
+                        { buttonTags && buttonTags.map(tag => (
+                            <button key={tag} className={`${filteredTags && filteredTags.find(item => item === tag) ? "selected" : ""} filter`} onClick={() => filterProjects(tag)}>{tag}</button>
+                        ))}
+                    </div>
+                    <div className="project-card-list-wrapper">
+                        { projectList && projectList.map(project => (
+                            <div data-aos="fade-up" key={project.title} className={`project-card ${project.type}`}>
+                                <ProjectCard key={project.title} project={project} shade={project.bg_color}/>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
