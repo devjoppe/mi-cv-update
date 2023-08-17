@@ -40,7 +40,7 @@ const Header = () => {
                 <div className="nav-wrapper">
                     <nav>
                         <NavLink to="/" className={({ isActive }) => isActive ? "active" : "standard" } >
-                            projects
+                            work
                         </NavLink>
                         <NavLink to="/about" className={({ isActive }) => isActive ? "active" : "standard" } >
                             about

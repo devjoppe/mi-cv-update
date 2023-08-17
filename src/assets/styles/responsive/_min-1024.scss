@@ -46,6 +46,7 @@
     .project-card-list-wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -56,6 +57,7 @@
 
     .project-card-wrapper {
         display: block;
+        width: 100%;
     }
 
     .card-content {
