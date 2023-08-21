@@ -6,7 +6,7 @@
         margin: 48px 0;
     }
 
-    h2 {
+    h2, h3 {
         margin-top: 0;
     }
 
@@ -52,28 +52,72 @@
 
     .project-card {
         display: flex;
+        // height: 100%;
         // flex-grow: 2;
+        &.quote {
+            border-left: none;
+        }
     }
 
     .project-card-wrapper {
-        display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // display: block;
+        // height: 100%;
         width: 100%;
     }
 
     .card-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // width: auto;
+        height: 100%;
         &.card-large {
             width: auto;
         }
         &.card-small {
             width: auto;
         }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-right: 0;
+            span {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .card-buttons {
+        position: relative;
+        height: 100%;
+        align-items: flex-end;
+        & button {
+            height: 50px;
+            text-align: left;
+        }
     }
 
     .card-large {
-
     }
     .card-small {
         width: 49%;
+    }
+
+    // Link list
+    .linklist-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .small {
+            width: 45%;
+        }
+        .large {
+            width: 100%;
+        }
     }
 
     // Text

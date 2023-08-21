@@ -15,7 +15,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
     return(
         <section className="dark-shade">
             <div className="section-content-wrapper">
-                <div>
+                <div className="left-pane">
                     <div>
                         <h2>{sectionInfo.title}</h2>
                     </div>
@@ -25,19 +25,22 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                         </span>
                     </div>
                 </div>
-                <div className="linklist-wrapper">
-                    {linkList.filter(item => item.flag === "use").map((list) => (
-                        <div data-aos="fade-up" key={list.category}>
-                            <h3>{list.category}</h3>
-                            <span className="link-description">{list.description}</span>
-                            <ul>
+                <div className="right-pane">
+                    <div className="linklist-wrapper">
+                        {linkList.filter(item => item.flag === "use").map((list) => (
+                            <div data-aos="fade-up" className={list.type} key={list.category}>
+                                { list.category && <h3>{list.category}</h3> }
+                                <span className="link-description">{list.description}</span>
                                 {list.links &&
-                                    list.links.map((link) => (
-                                        <LinkList key={`${list.category}-${link.id}`} linkData={link} style={0}/>
-                                    ))}
-                            </ul>
-                        </div>
-                    ))}
+                                    <ul>
+                                        { list.links.map((link) => (
+                                            <LinkList key={`${list.category}-${link.id}`} linkData={link} style={0}/>
+                                        )) }
+                                    </ul>
+                                }
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

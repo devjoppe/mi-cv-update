@@ -11,6 +11,7 @@ export interface linkListInt {
     category: string,
     description?: string,
     flag: string,
+    type: string,
     links?:linksInt[]
 }
 

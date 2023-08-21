@@ -40,13 +40,13 @@ const Header = () => {
                 <div className="nav-wrapper">
                     <nav>
                         <NavLink to="/" className={({ isActive }) => isActive ? "active" : "standard" } >
-                            work
+                            .work
                         </NavLink>
                         <NavLink to="/about" className={({ isActive }) => isActive ? "active" : "standard" } >
-                            about
+                            .about
                         </NavLink>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : "standard" } >
-                            contact
+                            .contact
                         </NavLink>
                     </nav>
                     <button onClick={() => {

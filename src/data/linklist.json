@@ -4,6 +4,7 @@
     "category": "Preferred Web Stack",
     "description": "",
     "flag": "use",
+    "type": "small",
     "links": [
       {
         "id": 2,
@@ -60,6 +61,7 @@
     "category": "Experience with",
     "description": "",
     "flag": "use",
+    "type": "small",
     "links": [
       {
         "id": 11,
@@ -98,6 +100,7 @@
     "category": "",
     "description": "I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript.",
     "flag": "use",
+    "type": "large",
     "links": []
   },
   {
@@ -105,6 +108,7 @@
     "category": "Tools",
     "description": "",
     "flag": "use",
+    "type": "small",
     "links": [
       {
         "id": 32,
@@ -143,6 +147,7 @@
     "category": "2022 - 2024",
     "description": "Frontend Developer",
     "flag": "edu",
+    "type": "small",
     "links": [
       {
         "id": 102,
@@ -157,6 +162,7 @@
     "category": "2002 - 2006",
     "description": "Media technology and interactive systems",
     "flag": "edu",
+    "type": "small",
     "links": [
       {
         "id": 104,
@@ -171,6 +177,7 @@
     "category": "Where I worked and some of my roles",
     "description": "",
     "flag": "work",
+    "type": "small",
     "links": [
       {
         "id": 201,
