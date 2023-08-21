@@ -29,7 +29,6 @@ function App() {
     // Check localStorage for dork/light mode
     const checkMode = localStorage.getItem('isMode')
     if(checkMode !==  null) {
-        console.log("Checking from local storage", checkMode)
         setMode(changeMode(checkMode))
     }
 

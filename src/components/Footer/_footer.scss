@@ -17,6 +17,7 @@
             flex-direction: column;
             span {
                 font-family: config.$blender-heavy;
+                margin-bottom: 4px;
             }
             div {
                 display: flex;
@@ -48,17 +49,37 @@
     }
     .copyright {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         border-top: 1px solid #282828;
         margin-top: 16px;
         padding-top: 32px;
         font-size: 14px;
         font-family: config.$blender-regular;
-        div {
-            margin-bottom: 4px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+        align-items: center;
+        .footer-text {
+            flex: 1;
+            margin-left: 16px;
+        }
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    a {
+        text-decoration: none !important;
+    }
+}
+
+.footer-linklist {
+    display: flex !important;
+    flex-direction: row !important;
+    .link-items {
+        align-items:center;
+        flex-direction: row !important;
+        margin-bottom: 0 !important;
+        margin-right: 16px;
+        svg {
+            margin-right: 4px;
         }
     }
 }

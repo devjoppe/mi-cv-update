@@ -6,7 +6,9 @@ import links from "../../data/linklist.json";
 // Interface
 import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";
 import LinkList from "../../components/LinkList/LinkList.tsx";
-import openWindow from "../../assets/icons/new_window_icon.svg";
+
+// Icons
+import { FaLinkedin } from "react-icons/fa";
 
 interface IProp {
     data: sectionInfoInt
@@ -43,7 +45,7 @@ const WorkSection:React.FC<IProp> = ({data}) => {
                         </div>
                         <button className="inverted-shade icon-button">
                             Visit my LinkedIn page for more info
-                            <img src={openWindow} className="icon inverted" alt="Open in new window"/>
+                            <FaLinkedin />
                         </button>
                     </div>
                 </div>

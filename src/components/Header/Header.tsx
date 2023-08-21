@@ -2,13 +2,16 @@
 // import Logo from '../../assets/images/jo-logo.svg'
 import logoLightMode from '../../assets/images/jo-logo-2x_exSvg.png'
 import logoDarkMode from '../../assets/images/jo-logo-dark-2x_exSvg.png'
-import darkMode from '../../assets/icons/dark-theme.svg'
+// import darkMode from '../../assets/icons/dark-theme.svg'
 
 // React Router
 import {NavLink} from "react-router-dom";
 
 // Redux
 import {useDispatch, useSelector} from "react-redux";
+
+// Icons
+import { FaSun, FaMoon } from "react-icons/fa";
 
 // Interface
 import {isLightRootStateInt} from "../../features/isLight.ts";
@@ -49,10 +52,11 @@ const Header = () => {
                             contact
                         </NavLink>
                     </nav>
-                    <button onClick={() => {
+                    <button className="set-theme" onClick={() => {
                         themeState === "lightmode" ? setChangedState('darkmode') : setChangedState('lightmode')
                     }}>
-                        <img className={`icon ${themeState}`} src={darkMode} alt="Dark mode" />
+                        { /* <img className={`icon ${themeState}`} src={darkMode} alt="Dark mode" /> */ }
+                        { themeState === "lightmode" ?  <FaMoon /> : <FaSun /> }
                     </button>
                 </div>
             </div>

@@ -206,6 +206,7 @@ button {
     cursor: pointer;
     &.icon-button {
         display: flex;
+        height: 45px;
         svg {
             margin-left: 6px;
             width: 12px !important;
@@ -234,5 +235,11 @@ button {
         border: 1px solid var(--border-default);
         margin-right: 4px;
         margin-bottom: 4px;
+    }
+    &.set-theme {
+        svg {
+            width: 16px;
+            height: 16px;
+        }
     }
 }
