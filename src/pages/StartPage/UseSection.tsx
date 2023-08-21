@@ -19,13 +19,14 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                     <div>
                         <h2>{sectionInfo.title}</h2>
                     </div>
+
+                </div>
+                <div className="right-pane">
                     <div>
                         <span className="kicker">
                             {sectionInfo.kicker}
                         </span>
                     </div>
-                </div>
-                <div className="right-pane">
                     <div className="linklist-wrapper">
                         {linkList.filter(item => item.flag === "use").map((list) => (
                             <div data-aos="fade-up" className={list.type} key={list.category}>
