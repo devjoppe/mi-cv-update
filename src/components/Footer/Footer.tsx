@@ -1,4 +1,4 @@
-import { FaCoffee, FaReact, FaJsSquare, FaServer } from "react-icons/fa";
+import { FaCoffee, FaReact, FaJsSquare, FaServer, FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
 
 const Footer = () => {
     return(
@@ -7,11 +7,11 @@ const Footer = () => {
                 <div className="left-content">
                     <div>
                         <span>Visit me on</span>
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/joakim-ottosson/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/devjoppe" target="_blank">Github</a></li>
-                            <li><a href="https://codepen.io/Max3er" target="_blank">Codepen</a></li>
-                        </ul>
+                        <div className="footer-linklist">
+                            <div className="link-items"><FaLinkedin /> <a href="https://www.linkedin.com/in/joakim-ottosson/" target="_blank">LinkedIn</a></div>
+                            <div className="link-items"><FaGithub /> <a href="https://github.com/devjoppe" target="_blank">Github</a></div>
+                            <div className="link-items"><FaCodepen /><a href="https://codepen.io/Max3er" target="_blank">Codepen</a></div>
+                        </div>
                     </div>
                     <div>
                         <span>Built with</span>
@@ -22,11 +22,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right-content">
+                {/* <div className="right-content">
                     <a href="">Work.</a>
                     <a href="">About.</a>
                     <a href="">Contact.</a>
-                </div>
+                </div> */}
             </div>
             <div className="copyright">
                 <div>
