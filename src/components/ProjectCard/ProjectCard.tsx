@@ -2,7 +2,7 @@
 import React from "react";
 
 // Icons
-import openWindow from '../../assets/icons/new_window_icon.svg'
+import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
 // Interface
 import {projectInt} from "../../interfaces/projectCardInt.ts";
@@ -33,8 +33,9 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
                     </div>
                     <p>{project.description}</p>
                     <div className="card-buttons">
-                        <button className="icon-button" onClick={() => goToPage(project.github)}>On Github <img src={openWindow} className="icon inverted" alt="Open in new window"/></button>
-                        <button className="icon-button" onClick={() => goToPage(project.solution)}>View solution <img src={openWindow} className="icon inverted" alt="Open in new window"/></button>
+
+                        <button className="icon-button" onClick={() => goToPage(project.github)}>Code <FaGithub /></button>
+                        <button className="icon-button" onClick={() => goToPage(project.solution)}>Solution <FaExternalLinkSquareAlt /></button>
                     </div>
                 </div>
                 </>

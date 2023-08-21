@@ -39,7 +39,8 @@
         display: flex;
         flex-direction: column;
         width: 35%;
-        padding-right: 16px;
+        padding-right: 24px;
+        text-align: right;
     }
 
     // Project card
@@ -56,6 +57,7 @@
         // flex-grow: 2;
         &.quote {
             border-left: none;
+            margin: 0;
         }
     }
 
@@ -105,6 +107,12 @@
     }
     .card-small {
         width: 49%;
+    }
+
+    // Content block
+    .content-block {
+        display: block;
+        margin-bottom: 32px;
     }
 
     // Link list

@@ -16,10 +16,12 @@ const WorkSection:React.FC<IProp> = ({data}) => {
     return(
         <section className="light-shade">
             <div className="section-content-wrapper">
-                <div>
+                <div className="left-pane">
                     <div>
                         <h2>{data.title}</h2>
                     </div>
+                </div>
+                <div className="right-pane">
                     <div>
                         <span className="kicker">
                             {data.kicker}

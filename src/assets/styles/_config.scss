@@ -206,6 +206,11 @@ button {
     cursor: pointer;
     &.icon-button {
         display: flex;
+        svg {
+            margin-left: 6px;
+            width: 12px !important;
+            height: 12px !important
+        }
         img {
             width: 16px !important;
             height: 16px !important;

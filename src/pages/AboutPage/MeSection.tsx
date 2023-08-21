@@ -19,22 +19,22 @@ const MeSection:React.FC<IProp> = ({data}) => {
         <section className="dark-shade">
             <div className="section-content-wrapper">
                 {data &&
+                    <div className="left-pane">
+                        <h2>{data.title}</h2>
+                    </div>
+                }
+                <div className="right-pane">
                     <div>
-                        <div>
-                            <h2>{data.title}</h2>
-                            <img className="me-image" src={myImage} alt="me" />
-                        </div>
-                        <div data-aos="fade-up">
+                        <img className="me-image" src={myImage} alt="me" />
+                    </div>
+                    <div className="content-block" data-aos="fade-up">
                             <span className="quote">
                                 {data.kicker}
                             </span>
-                            <span className="body-text">
+                        <span className="body-text">
                                 {data.extra && data.extra[0].data}
                             </span>
-                        </div>
                     </div>
-                }
-                <div>
                     <div>
                         <h2>Education</h2>
                     </div>
