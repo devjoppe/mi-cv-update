@@ -51,7 +51,7 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
     }
 
     return(
-        <div className={`project-card-wrapper ${shade}`}>
+        <div className={`project-card-wrapper ${shade!}`}>
             <CardType />
         </div>
     )

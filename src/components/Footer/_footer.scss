@@ -22,7 +22,7 @@
             div {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 16px;
+                margin-bottom: 24px;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -63,6 +63,15 @@
         svg {
             width: 24px;
             height: 24px;
+        }
+    }
+    .footer-menu-links {
+        a {
+            margin-right: 21px;
+            color: var(--font-inverted);
+            :last-child {
+                margin-right: 0;
+            }
         }
     }
     a {

@@ -1,3 +1,6 @@
+// Icons
+import { FaLinkedin } from "react-icons/fa";
+
 const FreelanceSection = () => {
     return(
         <section className="inverted-shade">
@@ -10,8 +13,8 @@ const FreelanceSection = () => {
                         <span className="inverted-kicker">
                             I can help you get started with your web project? Contact me, and I'm confident we can find a solution.
                         </span>
-                        <button>
-                            Contact me
+                        <button className="icon-button">
+                            Contact me <FaLinkedin />
                         </button>
                     </div>
                 </div>

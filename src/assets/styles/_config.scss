@@ -75,6 +75,16 @@ h3 {
 
 a {
     color: var(--font-main-color);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.1s ease, border-bottom-width 0.1s ease;
+    border-bottom: 1px dashed var(--highlight-color);
+    border-bottom-width: 0;
+    &:hover {
+        border-bottom-width: 2px;
+        opacity: 1;
+    }
 }
 
 nav {
@@ -87,6 +97,9 @@ nav {
         padding: 8px 16px;
         border-radius: 5px;
         text-decoration: none;
+        &:before {
+            content: "";
+        }
         &.active {
             background: var(--highlight-selected);
             color: var(--button-selected);

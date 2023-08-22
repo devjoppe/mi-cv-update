@@ -1,4 +1,5 @@
 import { FaCoffee, FaReact, FaJsSquare, FaServer, FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -22,11 +23,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className="right-content">
-                    <a href="">Work.</a>
-                    <a href="">About.</a>
-                    <a href="">Contact.</a>
-                </div> */}
             </div>
             <div className="copyright">
                 <div>
@@ -35,6 +31,11 @@ const Footer = () => {
                 <div className="footer-text">
                     Copyright © 2023 Joakim Ottosson. All rights reserved.<br />
                     Fulled by code and coffee
+                </div>
+                <div className="footer-menu-links">
+                    <Link to="/work">Work</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contant">Contact</Link>
                 </div>
             </div>
         </div>
