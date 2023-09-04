@@ -19,6 +19,13 @@
     border-radius: 10px;
 }
 
+.project-card {
+    &.quote {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
 .card-content {
     color: var(--font-secondary-color);
     &.card-small {
