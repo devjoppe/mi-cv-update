@@ -4,11 +4,20 @@ import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";
 // React
 import React from "react";
 
+// Icons
+import {FaLinkedin, FaRegCopy} from "react-icons/fa";
+
+// React router
+import {useNavigate} from "react-router-dom";
+
 interface IProp {
     sectionInfo: sectionInfoInt[]
 }
 
 const SocialSection:React.FC<IProp> = ({sectionInfo}) => {
+
+    const navigate = useNavigate()
+
     return(
         <section className="light-shade">
             <div className="section-content-wrapper">
@@ -31,10 +40,10 @@ const SocialSection:React.FC<IProp> = ({sectionInfo}) => {
                 }
                 <div className="right-pane">
                     <div className="content-block" data-aos="fade-up">
-                        <span className="body-text">
-                            joaott02[a]gmail.com
-                        </span>
-                        <span className="body-text">Go to my LinkedIn page</span>
+                        <div className="contact-content">
+                            <button className="contact-button">joaott02[a]gmail.com <FaRegCopy /></button>
+                            <button className="contact-button" onClick={() => navigate('https//google.com')}>Go to my LinkedIn page <FaLinkedin /></button>
+                        </div>
                     </div>
                 </div>
             </div>

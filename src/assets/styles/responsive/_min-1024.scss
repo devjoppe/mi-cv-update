@@ -123,6 +123,19 @@
         }
     }
 
+    .contact-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contact-button {
+        width: auto;
+        svg {
+            margin-left: 8px;
+        }
+    }
+
     .card-large {
     }
     .card-small {
