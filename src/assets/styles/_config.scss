@@ -25,6 +25,7 @@ $blender-regular: blender-pro-regular, sans-serif;
     --highlight-color: #7CAAD4;
     --highlight-selected: #0A0A0A;
     // Button-special
+    --nav-selected: #F4F4F4;
     --border-default: #e8e8e8;
     --button-selected: #F4F4F4;
     --filter-button-background: var(--background-shade-special);
@@ -97,7 +98,7 @@ nav {
         }
         &.active {
             background: var(--highlight-selected);
-            color: var(--button-selected);
+            color: var(--nav-selected);
             margin: 0 8px;
         }
         &.standard {
