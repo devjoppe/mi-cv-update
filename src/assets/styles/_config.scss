@@ -108,6 +108,9 @@ nav {
         &.standard {
             padding: 8px 8px;
         }
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 

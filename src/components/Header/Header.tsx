@@ -1,7 +1,7 @@
 // Graphics
 // import Logo from '../../assets/images/jo-logo.svg'
-// import logoLightMode from '../../assets/images/jo-logo-2x_exSvg.png'
-// import logoDarkMode from '../../assets/images/jo-logo-dark-2x_exSvg.png'
+import logoLightMode from '../../assets/images/jo-logo-2x_exSvg.png'
+import logoDarkMode from '../../assets/images/jo-logo-dark-2x_exSvg.png'
 // import darkMode from '../../assets/icons/dark-theme.svg'
 
 // React Router
@@ -36,9 +36,9 @@ const Header = () => {
         <header className={`${lightState ? "light-shade" : "dark-shade"}`} >
             <div className="header-wrapper" >
                 <div className="logo-wrapper">
-                    { /* <img src={
+                    <img src={
                         themeState === "lightmode" ? logoLightMode : logoDarkMode
-                    } alt="Logo" /> */ }
+                    } alt="Logo" />
                 </div>
                 <div className="nav-wrapper">
                     <nav>
