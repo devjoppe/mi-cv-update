@@ -100,6 +100,10 @@ nav {
             background: var(--highlight-selected);
             color: var(--nav-selected);
             margin: 0 8px;
+            cursor: auto;
+            &:hover {
+                text-decoration: none;
+            }
         }
         &.standard {
             padding: 8px 8px;
@@ -144,11 +148,7 @@ span {
 }
 
 li {
-    display: flex;
-    align-items: center;
-    svg {
-        margin-right: 8px;
-    }
+
 }
 
 // Colors components

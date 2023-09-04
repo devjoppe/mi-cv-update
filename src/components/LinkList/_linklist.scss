@@ -11,6 +11,11 @@
         margin-top: 8px;
         margin-bottom: 32px;
         li {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 8px;
+            }
             color: var(--font-secondary-color);
             margin-bottom: 6px;
             padding: 12px 0;
@@ -20,6 +25,17 @@
             }
             &:first-child {
                 padding-top: 0;
+            }
+            > div {
+                display: flex;
+                align-items: center;
+            }
+            > span {
+                color: var(--font-secondary-color)
+            }
+            &.list-column {
+                flex-direction: column !important;
+                align-items: flex-start;
             }
         }
     }

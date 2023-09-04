@@ -18,8 +18,8 @@ const LinkList:React.FC<IProp> = ({linkData, style}) => {
             {style === 0 &&
                 <li><FaExternalLinkSquareAlt size={13} /> <a href={linkData.url} target="_blank">{linkData.link_title}</a> - {linkData.description}</li>}
             {style === 1 &&
-                <li><a href={linkData.url} target="_blank">{linkData.link_title}</a><br />
-                    {linkData.description}
+                <li className="list-column"><div><FaExternalLinkSquareAlt size={13} /> <a href={linkData.url} target="_blank">{linkData.link_title}</a></div>
+                <span>{linkData.description}</span>
                 </li>}
         </>
     )

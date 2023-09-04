@@ -56,7 +56,7 @@ footer {
     }
     .copyright {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         border-top: 1px solid #282828;
         margin-top: 32px;
         padding-top: 32px;
@@ -66,17 +66,20 @@ footer {
         .footer-text {
             flex: 1;
             margin-left: 16px;
+            text-align: center;
         }
         svg {
             width: 24px;
             height: 24px;
+            margin-bottom: 16px;
         }
     }
     .footer-menu-links {
+        margin-top: 16px;
         a {
             margin-right: 21px;
             color: var(--font-inverted);
-            :last-child {
+            &:last-child {
                 margin-right: 0;
             }
         }
