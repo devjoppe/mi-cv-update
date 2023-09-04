@@ -33,8 +33,8 @@ const Header = () => {
     }, [changedState]);
 
     return (
-        <header>
-            <div className={`${lightState ? "light-shade" : "dark-shade"} header-wrapper`} >
+        <header className={`${lightState ? "light-shade" : "dark-shade"}`} >
+            <div className="header-wrapper" >
                 <div className="logo-wrapper">
                     <img src={
                         themeState === "lightmode" ? logoLightMode : logoDarkMode
