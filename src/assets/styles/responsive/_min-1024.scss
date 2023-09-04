@@ -1,9 +1,13 @@
 @media screen and (min-width: 1024px) {
     // Headings
     h1 {
-        font-size: 128px;
-        line-height: 98px;
+        font-size: 174px;
+        line-height: 116px;
         margin: 48px 0;
+    }
+
+    h2 {
+        font-size: 42px;
     }
 
     h2, h3 {
@@ -142,6 +146,10 @@
         &.subtitle {
             font-size: 28px;
             line-height: 30px;
+        }
+        &.filter-tags {
+            font-size: 18px;
+            margin-top: 12px;
         }
     }
 }
