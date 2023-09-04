@@ -13,6 +13,7 @@ import {changeLight} from "../../features/isLight.ts"; // Redux feature to chang
 
 // React
 import {useEffect} from "react";
+import {Link} from "react-router-dom";
 
 const StartPage = () => {
 
@@ -28,6 +29,7 @@ const StartPage = () => {
                 <div className="section-content-wrapper" data-aos="zoom-out" data-aos-duration="1500">
                     {start && start.filter(item => item.id === 1).map(data  => (
                         <div key={data.id}>
+                            <span className="welcome-text">Welcome! 👋 My name is <Link to={'/about'}>Joakim</Link> and I am a</span>
                             <h1>{data.title}</h1>
                             <span className="subtitle">
                                 {data.kicker}

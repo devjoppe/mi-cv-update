@@ -37,6 +37,10 @@
                 flex-direction: column !important;
                 align-items: flex-start;
             }
+            &.list-row {
+                flex-direction: row;
+                align-items: flex-start;
+            }
         }
     }
     span {
