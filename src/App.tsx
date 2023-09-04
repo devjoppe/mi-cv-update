@@ -13,6 +13,7 @@ import Layout from "./layout/Layout.tsx";
 // Pages
 import StartPage from "./pages/StartPage/StartPage.tsx";
 import AboutPage from "./pages/AboutPage/AboutPage.tsx";
+import ContactPage from "./pages/ContactPage/ContactPage.tsx";
 
 // Interfaces
 import {changeMode, isModeRootStateInt} from "./features/isMode.ts";
@@ -43,6 +44,7 @@ function App() {
             <Route path="/" element={<Layout />} >
                 <Route index element={<StartPage />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
             </Route>
         </Routes>
     </div>

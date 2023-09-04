@@ -28,12 +28,12 @@ const MeSection:React.FC<IProp> = ({data}) => {
                         <img className="me-image" src={myImage} alt="me" />
                     </div>
                     <div className="content-block" data-aos="fade-up">
-                            <span className="quote">
-                                {data.kicker}
-                            </span>
+                        <span className="quote">
+                            {data.kicker}
+                        </span>
                         <span className="body-text">
-                                {data.extra && data.extra[0].data}
-                            </span>
+                            {data.extra && data.extra[0].data}
+                        </span>
                     </div>
                     <div>
                         <h2>Education</h2>
