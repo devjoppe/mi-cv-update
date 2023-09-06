@@ -34,8 +34,11 @@ const ProjectCard:React.FC<IProp> = ({project, shade}) => {
                     <p>{project.description}</p>
                     <div className="card-buttons">
 
-                        <button className="icon-button" onClick={() => goToPage(project.github)}>Code <FaGithub /></button>
-                        <button className="icon-button" onClick={() => goToPage(project.solution)}>Solution <FaExternalLinkSquareAlt /></button>
+                        { project.github && <button className="icon-button" onClick={() => goToPage(project.github)}>Code <FaGithub/>
+                        </button> }
+                        {project.solution && <button className="icon-button"
+                                 onClick={() => goToPage(project.solution)}>Solution <FaExternalLinkSquareAlt/>
+                        </button> }
                     </div>
                 </div>
                 </>
