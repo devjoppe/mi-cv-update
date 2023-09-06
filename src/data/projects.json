@@ -78,8 +78,8 @@
     "title": "Standard Todo",
     "description": "As a frontend developer, creating a Todo app is a standard practice. I designed and developed this app to showcase my UI design skills, using TypeScript for the frontend and Firebase for efficient data and user management.",
     "tags": ["TypeScript", "Firebase", "SCSS"],
-    "github": "https://github.com/devjoppe/github-user-search-app",
-    "solution": "https://www.jotto.dev/project/github-user-search-app/",
+    "github": "https://github.com/devjoppe/my-todo-app",
+    "solution": "https://www.jotto.dev/project/my-todo/",
     "extra": "",
     "bg_color": "dark-shade"
   },
