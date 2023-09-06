@@ -2,7 +2,7 @@ import React from "react";
 
 // Links data and page data
 import links from '../../data/linklist.json'
-import myImage from '../../../public/assets/images/about-me.png'
+import myImage from '../../assets/images/about-me.png'
 
 // Interface
 import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";

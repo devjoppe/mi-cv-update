@@ -15,6 +15,11 @@ import modeReducer from './features/isMode.ts'
 // CSS
 import './assets/styles/style.css'
 
+// Fonts
+import './assets/fonts/blenderpro/BlenderPro-Bold.woff';
+import './assets/fonts/blenderpro/BlenderPro-Heavy.woff';
+import './assets/fonts/blenderpro/BlenderPro-Medium.woff';
+
 // Redux reducers
 const store = configureStore({
     reducer: {
