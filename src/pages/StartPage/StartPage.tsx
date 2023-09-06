@@ -42,7 +42,7 @@ const StartPage = () => {
                 </div>
             </section>
             <ProjectSection sectionInfo={start[1]} />
-            <FreelanceSection />
+            <FreelanceSection sectionInfo={start[2]}/>
             <UseSection sectionInfo={start[3]} linkList={linkData} />
         </>
     )

@@ -19,7 +19,6 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
                     <div>
                         <h2>{sectionInfo.title}</h2>
                     </div>
-
                 </div>
                 <div className="right-pane">
                     <div>

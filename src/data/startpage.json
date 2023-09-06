@@ -2,32 +2,32 @@
   {
     "id": 1,
     "title": "Frontend Developer",
-    "kicker": "With my analytical skills and careful attention to detail to create services that represent the high level of quality.",
+    "kicker": "As a junior React frontend developer, I use my analytical skills and careful attention to detail to offer smooth user experiences.",
     "extra": [],
     "user": "Joakim Ottosson"
   },
   {
     "id": 2,
     "title": "Selected projects",
-    "kicker": "These projects aim to showcase my skills as a frontend developer.",
+    "kicker": "These projects are designed to demonstrate my skills as a frontend developer.",
     "extra": [
       {
-        "data": "I feel comfortable following design specifications and requirements. But if needed,  I am also able to develop my own concepts and designs."
+        "data": "As a developer, I am proficient in following specifications, yet I am also capable of creating design concepts when the situation requires."
       }
     ],
     "user": ""
   },
   {
     "id": 3,
-    "title": "Freelance projects",
-    "kicker": "Do you need someone to help you get started with your web project? Contact me, and I'm confident we can find a solution.",
+    "title": "Need help with a project",
+    "kicker": "Need help starting your web project? Contact me, and let's find a solution together.",
     "extra": [],
     "user": ""
   },
   {
     "id": 4,
     "title": "What I use?",
-    "kicker": "In development, I prefer the following technologies. However, my aspiration is to continuously learn new techniques and expand my knowledge to keep evolving as a developer.",
+    "kicker": "I have a preference for these technologies in development, but my aspiration is to continually learn and expand my knowledge, evolving as a developer.",
     "extra": [],
     "user": ""
   }
