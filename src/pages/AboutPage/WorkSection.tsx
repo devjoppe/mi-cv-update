@@ -9,6 +9,7 @@ import LinkList from "../../components/LinkList/LinkList.tsx";
 
 // Icons
 import { FaLinkedin } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 interface IProp {
     data: sectionInfoInt
@@ -43,10 +44,12 @@ const WorkSection:React.FC<IProp> = ({data}) => {
                                 </div>
                             ))}
                         </div>
+                        <Link to="https://www.linkedin.com/in/joakim-ottosson/">
                         <button className="inverted-shade icon-button">
                             Visit my LinkedIn page for more info
                             <FaLinkedin />
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>

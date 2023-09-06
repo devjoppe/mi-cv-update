@@ -144,7 +144,7 @@
   },
   {
     "id": 101,
-    "category": "2022 - 2024",
+    "category": "2022 - 2024 (ongoing)",
     "description": "Frontend Developer",
     "flag": "edu",
     "type": "small",
@@ -200,7 +200,7 @@
       {
         "id": 204,
         "link_title": "Swedish Armed Forces",
-        "description": "Elearning devloper & project manager",
+        "description": "Elearning developer & project manager",
         "url": "https://www.forsvarsmakten.se/"
       }
     ]

@@ -2,17 +2,17 @@
   {
     "id": 1,
     "title": "Who am I?",
-    "kicker": "I find inspiration in simplicity for creativity and productivity, both in my personal life and in my professional career.",
+    "kicker": "I firmly believe in the power of lifelong learning, starting small, and steadily growing from there.",
     "extra": [],
     "user": "Joakim Ottosson"
   },
   {
     "id": 2,
     "title": "About me",
-    "kicker": "Welcome to my website! This site blaha blaha blaha",
+    "kicker": "I'm passionate about creating  digital experiences, and this portfolio is a testament to my dedication to this craft. Feel free to explore my projects and get to know more about my skills and aspirations.",
     "extra": [
       {
-        "data": "I also have experience in using Tailwind and Bootstrap, which are CSS frameworks, as well as React component libraries like Material UI, and more. My goal is to be flexible and choose the technologies that help me achieve my objectives.\nI also prefer to develop in TypeScript, which is a Typed Superset of JavaScript.."
+        "data": "While my initial path involved creating educational digital content, I discovered a profound passion for the art of web development and design. I immersed myself in learning languages like HTML, CSS, and JavaScript, and as my proficiency grew, so did my excitement for frontend development."
       }
     ],
     "user": ""
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "title": "My career so far",
-    "kicker": "I have nearly 20 years of experience in various professional areas within web development. I have worked at both strategic and operational levels.",
+    "kicker": "With nearly 20 years of experience in the digital industry, I've operated at both strategic and operational levels within different areas.",
     "extra": [
       {
         "data": "I enjoy working in a process-oriented manner and continuously improving work methodologies that drive progress. Much of my previous knowledge has been carried over into my role as a frontend developer."

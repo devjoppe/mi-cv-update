@@ -2,14 +2,14 @@
   {
     "id": 1,
     "title": "Say hi?",
-    "kicker": "Text?",
+    "kicker": "Saying 'hi' is more than just a greeting",
     "extra": [],
     "user": "Joakim Ottosson"
   },
   {
     "id": 2,
     "title": "Email",
-    "kicker": "Email is the fastest and easiest way to get in contact with me and I will get back to you shortly",
+    "kicker": "Email is an easy way to reach me. Click the button to copy my email address to your clipboard.",
     "extra": [
       {
         "data": "Text"
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "LinkedIn",
-    "kicker": "LinkedIn is the fastest and easiest way to get in contact with me",
+    "kicker": "Why not use LinkedIn, connect and send me a message. I'll try to  respond swiftly",
     "extra": [
       {
         "data": "Text"
