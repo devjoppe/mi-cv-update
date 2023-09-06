@@ -2,6 +2,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import {sectionInfoInt} from "../../interfaces/sectionInfoInt.ts";
 import React from "react";
+import {Link} from "react-router-dom";
 
 interface IProp {
     sectionInfo: sectionInfoInt
@@ -19,9 +20,11 @@ const FreelanceSection:React.FC<IProp> = ({sectionInfo}) => {
                         <span className="inverted-kicker">
                             {sectionInfo.kicker}
                         </span>
-                        <button className="icon-button">
-                            Contact me <FaLinkedin />
-                        </button>
+                        <Link to="https://www.linkedin.com/in/joakim-ottosson/">
+                            <button className="icon-button">
+                                Contact me <FaLinkedin />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
