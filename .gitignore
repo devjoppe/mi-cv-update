@@ -26,5 +26,8 @@ prepros.config
 *.sln
 *.sw?
 
+projects
+public/projects
+
 # Local Netlify folder
 .netlify
