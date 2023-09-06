@@ -22,6 +22,11 @@ import {changeMode, isModeRootStateInt} from "./features/isMode.ts";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// Fonts
+import './assets/fonts/blenderpro/BlenderPro-Book.woff';
+import './assets/fonts/blenderpro/BlenderPro-Heavy.woff';
+import './assets/fonts/blenderpro/BlenderPro-Medium.woff';
+
 function App() {
 
     const themeState = useSelector((state:isModeRootStateInt) => state.isMode.mode)
