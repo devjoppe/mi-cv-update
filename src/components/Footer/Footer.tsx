@@ -31,10 +31,10 @@ const Footer = () => {
                     </div>
                     <div className="footer-text">
                         Copyright © 2023 Joakim Ottosson. All rights reserved.<br />
-                        Fulled by code and coffee
+                        Fueled by code and coffee
                     </div>
                     <div className="footer-menu-links">
-                        <Link to="/work">Work</Link>
+                        <Link to="/">Work</Link>
                         <Link to="/about">About</Link>
                         <Link to="/contact">Contact</Link>
                     </div>
