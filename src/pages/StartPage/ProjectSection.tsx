@@ -23,6 +23,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
 
     const [filteredTags, setFilteredTags] = useState<string[]>([])
     const [projectList, setProjectList] = useState<projectInt[]>(projects)
+    const [projectCounter, setProjectCounter] = useState<number>(0)
 
     // Filter out tags from the projects
     const allProjectTags:string[] = []
@@ -65,11 +66,13 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 )
             )
         } else {
-            setProjectList(allProjects)
+            setProjectList(projects)
+            setProjectCounter(projects.filter(item => item.type != 'quote').length)
         }
     }, [filteredTags]);
 
     // Todo: Tuesday -> working on splitting up the h2 and content on desktop view.
+    console.log(projectList)
 
     return (
         <section className="light-shade">
@@ -88,7 +91,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 }
                 <div className="right-pane">
                     <div className="filter-block">
-                        <span className="filter-tags">Filter ( {projectList.length} of {allProjects.length} projects)</span>
+                        <span className="filter-tags">Filter ({projectCounter} of {allProjects.length} projects)</span>
                         { buttonTags && buttonTags.map(tag => (
                             <button key={tag} className={`${filteredTags && filteredTags.find(item => item === tag) ? "selected" : ""} filter`} onClick={() => filterProjects(tag)}>{tag}</button>
                         ))}
