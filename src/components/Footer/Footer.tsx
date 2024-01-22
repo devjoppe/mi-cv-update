@@ -30,7 +30,7 @@ const Footer = () => {
                         <FaCoffee />
                     </div>
                     <div className="footer-text">
-                        Copyright © 2023 Joakim Ottosson. All rights reserved.<br />
+                        Copyright © 2024 Joakim Ottosson. All rights reserved.<br />
                         Fueled by code and coffee
                     </div>
                     <div className="footer-menu-links">
