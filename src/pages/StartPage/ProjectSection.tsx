@@ -32,6 +32,8 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
         })
     })
 
+    const allProjects = projects.filter(item => item.type != 'quote')
+
     // Unique button tags
     const buttonTags:string[] = [...new Set(allProjectTags)]
 
@@ -63,7 +65,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 )
             )
         } else {
-            setProjectList(projects)
+            setProjectList(allProjects)
         }
     }, [filteredTags]);
 
@@ -86,7 +88,7 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
                 }
                 <div className="right-pane">
                     <div className="filter-block">
-                        <span className="filter-tags">Filter ( {projectList.length} of {projects.length})</span>
+                        <span className="filter-tags">Filter ( {projectList.length} of {allProjects.length} projects)</span>
                         { buttonTags && buttonTags.map(tag => (
                             <button key={tag} className={`${filteredTags && filteredTags.find(item => item === tag) ? "selected" : ""} filter`} onClick={() => filterProjects(tag)}>{tag}</button>
                         ))}
