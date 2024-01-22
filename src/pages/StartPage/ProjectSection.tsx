@@ -71,9 +71,6 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
         }
     }, [filteredTags]);
 
-    // Todo: Tuesday -> working on splitting up the h2 and content on desktop view.
-    console.log(projectList)
-
     return (
         <section className="light-shade">
             <div className="section-content-wrapper">
