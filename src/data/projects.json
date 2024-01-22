@@ -36,6 +36,18 @@
     "bg_color": "dark-shade"
   },
   {
+    "id": 14,
+    "type": "card-large",
+    "image": "/assets/images/pr-openpeeps.png",
+    "title": "Peeps - The Card Game",
+    "description": "This personal learning project involved creating a memory card game using illustrations from Open Peeps as card designs. The project utilized React for frontend development and integrated Firebase for user management and highscores.",
+    "tags": ["React", "Firebase", "TypeScript", "Design"],
+    "github": "https://github.com/devjoppe/card-game",
+    "solution": "https://www.jotto.dev/project/peeps-card-game/",
+    "extra": "",
+    "bg_color": "dark-shade"
+  },
+  {
     "id": 13,
     "type": "quote",
     "image": "",
@@ -48,14 +60,14 @@
     "bg_color": ""
   },
   {
-    "id": 14,
+    "id": 20,
     "type": "card-large",
-    "image": "/assets/images/pr-openpeeps.png",
-    "title": "Peeps - The Card Game",
-    "description": "This personal learning project involved creating a memory card game using illustrations from Open Peeps as card designs. The project utilized React for frontend development and integrated Firebase for user management and highscores.",
-    "tags": ["React", "Firebase", "TypeScript", "Design"],
-    "github": "https://github.com/devjoppe/card-game",
-    "solution": "https://www.jotto.dev/project/peeps-card-game/",
+    "image": "/assets/images/pr-moviedatabase.png",
+    "title": "Movie database",
+    "description": "This solution was developed using React, React Query, and Axios. In terms of data retrieval, the application interfaces with The Movie Database (TMDb) API, exemplifying external resources to enhance its overall functionality.",
+    "tags": ["React", "API", "TypeScript", "Design"],
+    "github": "https://github.com/devjoppe/mi-movie-database",
+    "solution": "https://mi-mbmovie.netlify.app/",
     "extra": "",
     "bg_color": "dark-shade"
   },
