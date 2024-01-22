@@ -58,13 +58,13 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
     // Filter projects based on filterTags array:
     useEffect(() => {
         if(filteredTags.length > 0) {
-            setProjectList(
-                projects.filter(project =>
-                    project.tags?.some(tag =>
-                        filteredTags.includes(tag)
-                    )
+            const selectedProjects = projects.filter(project =>
+                project.tags?.some(tag =>
+                    filteredTags.includes(tag)
                 )
             )
+            setProjectList(selectedProjects)
+            setProjectCounter(selectedProjects.length)
         } else {
             setProjectList(projects)
             setProjectCounter(projects.filter(item => item.type != 'quote').length)
