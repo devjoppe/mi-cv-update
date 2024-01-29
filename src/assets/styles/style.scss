@@ -7,12 +7,12 @@
 // Website layout
 @use "../../layout/layout";
 
-// Components -----
+// Components
 @use "../../components/header/header";
 @use "../../components/ProjectCard/projectcard";
 @use "../../components/LinkList/linklist";
 @use "../../components/Footer/footer";
 @use "../../components/ScrollIndicator/scrollIndicator";
 
-// Responsive----------------------
+// Responsive
 @use "./responsive/min-1024";
