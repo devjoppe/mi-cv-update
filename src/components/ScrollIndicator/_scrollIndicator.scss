@@ -9,5 +9,10 @@
 
 .bar {
     background: var(--highlight-color);
+    position: fixed;
+    top: 63;
+    left: 0;
+    right: 0;
+    transform-origin: 0%;
     height: 6px;
 }
