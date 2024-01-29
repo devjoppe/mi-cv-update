@@ -1,8 +1,17 @@
 // Import-fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kreon:wght@400;500;600;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+// PRODUCTION
+/*
 @font-face{font-family:"blender-pro-heavy"; src: local("BlenderPro-Heavy.woff"), url("/assets/BlenderPro-Heavy-f68dc8e2.woff") format("woff")}
 @font-face{font-family:"blender-pro-regular"; src: local("BlenderPro-Book.woff"), url("/assets/BlenderPro-Book-41e95cb4.woff") format("woff")}
 @font-face{font-family:"blender-pro-medium"; src: local("BlenderPro-medium.woff"), url("/assets/BlenderPro-Medium-3bed140a.woff") format("woff")}
+*/
+
+// DEVELOPMENT
+@font-face{font-family:"blender-pro-heavy"; src: local("BlenderPro-Heavy.woff"), url("../fonts/blenderpro/BlenderPro-Heavy.woff") format("woff")}
+@font-face{font-family:"blender-pro-regular"; src: local("BlenderPro-Book.woff"), url("../fonts/blenderpro/BlenderPro-Book.woff") format("woff")}
+@font-face{font-family:"blender-pro-medium"; src: local("BlenderPro-medium.woff"), url("../fonts/blenderpro/BlenderPro-Medium.woff") format("woff")}
 
 // Font setup
 $blender-heavy: blender-pro-heavy, sans-serif;
@@ -58,7 +67,7 @@ h1 {
     font-size: 62px;
     line-height: 48px;
     color: var(--font-main-color);
-    margin: 32px 0;
+    margin: 0 0 32px 0;
 }
 
 h2, h3, h4 {
