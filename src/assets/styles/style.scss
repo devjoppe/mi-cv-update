@@ -8,11 +8,12 @@
 @use "../../layout/layout";
 
 // Components
-@use "../../components/header/header";
+@use "../../components/Header/header";
 @use "../../components/ProjectCard/projectcard";
 @use "../../components/LinkList/linklist";
 @use "../../components/Footer/footer";
 @use "../../components/ScrollIndicator/scrollIndicator";
+@use "../../components/Sections/sections";
 
 // Responsive
 @use "./responsive/min-1024";

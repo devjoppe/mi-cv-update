@@ -63,6 +63,11 @@
         text-align: right;
     }
 
+    .left-pane-title {
+        position: sticky;
+        top: 125px;
+    }
+
     // Project card
     .project-card-list-wrapper {
         display: flex;
