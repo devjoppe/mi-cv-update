@@ -76,10 +76,8 @@ const ProjectSection:React.FC<IProp> = ({sectionInfo}) => {
             <div className="section-content-wrapper">
                 {sectionInfo &&
                     <div className="left-pane">
-                        <div>
+                        <div className="left-pane-title"> { /* Fix this one in mobile */ }
                             <h2>{sectionInfo.title}</h2>
-                        </div>
-                        <div>
                             <span className="kicker">
                                 {sectionInfo.kicker}
                             </span>

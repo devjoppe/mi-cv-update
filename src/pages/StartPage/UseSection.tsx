@@ -16,7 +16,7 @@ const UseSection:React.FC<IProp> = ({sectionInfo, linkList}) => {
         <section className="dark-shade">
             <div className="section-content-wrapper">
                 <div className="left-pane">
-                    <div>
+                    <div className="left-pane-title">
                         <h2>{sectionInfo.title}</h2>
                     </div>
                 </div>
