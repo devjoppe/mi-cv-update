@@ -47,55 +47,38 @@ const computerText = `start.filter(item => item.id === 1)
     return(
         <>
             <section className="dark-shade top-section">
-                <div style={{
-                    position: 'absolute',
-                    display: 'flex',
-                    width: '100%',
-                    height: 'inherit',
-                    // backgroundColor: 'red',
-                    alignItems: 'center',
-                    justifyContent: 'flex-end'
-                }}>
-                    <div data-aos="zoom-out" data-aos-duration="1500" style={{
-                        position: 'relative',
-                        display: 'block',
-                        height: '520px',
-                        width: '25%',
-                        // backgroundColor: 'red',
-                        backgroundImage: `url(${sectionBg})`,
-                        backgroundSize: '500px',
-                        backgroundPosition: '0% 100%',
-                        backgroundRepeat: 'no-repeat'
-                    }}>
-                        <div style={{
-                            position: 'relative',
-                            right: '-90px',
-                            top: '70px',
-                            width: '320px',
-                            // backgroundColor: 'blueviolet',
-                            color: 'white',
-                        }}>
-                            <code style={{ wordWrap: 'break-word', textShadow: '0 0 5px #fff'}}>
+                <div className="top-section-image-content">
+                    <div className='display-flex image-content'>
+                        <div className='section-image-wrapper' data-aos="fade-right" data-aos-duration="1500">
+                            
+                            {/* </div> <code style={{ wordWrap: 'break-word', textShadow: '0 0 5px #fff'}}>
                                 {
                                     <ReactTyped strings={[computerText]} typeSpeed={50} cursorChar='&#x275A;' loop style={{ whiteSpace: 'pre-line', fontSize: '12px' }} />
                                 }
-                            </code>
+                            </code> <div>  */ } 
+                            
+                                <img src={sectionBg} />
+                        </div>
+                        { /* <code style={{ wordWrap: 'break-word', textShadow: '0 0 5px #fff'}}>
+                            {
+                                <ReactTyped strings={[computerText]} typeSpeed={50} cursorChar='&#x275A;' loop style={{ whiteSpace: 'pre-line', fontSize: '12px' }} />
+                            }
+                        </code> */ }
+                        <div className="section-content-wrapper" data-aos="zoom-in" data-aos-duration="1500" style={{alignItems: 'center'}}>
+                            { start && start.filter(item => item.id === 1).map(data  => (
+                                <div key={data.id} className='page-title'>
+                                    { /* <span className="welcome-text">Hello! 👋 My name is <Link to={'/about'}>Joakim</Link> and I am a</span> */}
+                                    <h1 className='responsive-heading'>{data.title}.</h1>
+                                    <span className="subtitle no-border-left">
+                                        {data.kicker}
+                                    </span>
+                                    { /* <span className="quote-by">
+                                        - {data.user}
+                                    </span> */ }
+                                </div>
+                            )) }
                         </div>
                     </div>
-                </div>
-                <div className="section-content-wrapper" data-aos="zoom-in" data-aos-duration="1500">
-                    { start && start.filter(item => item.id === 1).map(data  => (
-                        <div key={data.id}>
-                            { /* <span className="welcome-text">Hello! 👋 My name is <Link to={'/about'}>Joakim</Link> and I am a</span> */}
-                            <h1>{data.title}</h1>
-                            <span className="subtitle">
-                                {data.kicker}
-                            </span>
-                            { /* <span className="quote-by">
-                                - {data.user}
-                            </span> */ }
-                        </div>
-                    )) }
                 </div>
             </section>
             <SpecialSection />

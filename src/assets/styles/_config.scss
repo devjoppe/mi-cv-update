@@ -68,6 +68,10 @@ h1 {
     line-height: 48px;
     color: var(--font-main-color);
     margin: 0 0 32px 0;
+    &.responsive-heading {
+        font-size: 8vw !important;
+        line-height: 5.5vw;
+    }
 }
 
 h2, h3, h4 {
@@ -129,10 +133,17 @@ span {
         display: block;
         border-left: 6px solid var(--highlight-color);
         padding-left: 16px;
-        margin-bottom: 32px;
+        // margin-bottom: 32px;
         font-family: $blender-medium;
         font-size: 24px;
         color: var(--font-secondary-color);
+        &.responsive-span {
+            font-size: 1.8vw;
+        }
+        &.no-border-left {
+            border-left: 0;
+            border-left: 6px solid var(--highlight-color);
+        }
     }
     &.kicker {
         @include kicker-mixin;
@@ -179,6 +190,11 @@ span {
         color: var(--font-main-color);
         margin-right: 8px;
     }
+}
+
+// Sizes
+.width-50-percent {
+    width: 50% !important;
 }
 
 // Misc components
@@ -297,4 +313,9 @@ button {
     svg {
         margin-left: 8px;
     }
+}
+
+// Style single components
+.display-flex {
+    display: flex;
 }

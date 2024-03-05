@@ -1,4 +1,6 @@
 @media screen and (min-width: 1024px) {
+    // Sizes
+
     // Headings
     h1 {
         font-size: 200px;
@@ -45,6 +47,7 @@
         display: flex;
         flex-direction: row;
         width: 992px;
+        margin-top: 0;
     }
 
     .right-pane {
@@ -66,6 +69,17 @@
     .left-pane-title {
         position: sticky;
         top: 125px;
+    }
+
+    .top-section-image-content {
+        justify-content: flex-end;
+        .image-content {
+            flex-direction: row;
+        }
+    }
+
+    .section-image-wrapper {
+        margin-right: 32px;
     }
 
     // Project card
@@ -191,6 +205,11 @@
         &.subtitle {
             font-size: 28px;
             line-height: 30px;
+            margin-bottom: 32px;
+            &.no-border-left {
+                border-left: 0;
+                padding-left: 0;
+            }
         }
         &.filter-tags {
             font-size: 18px;
